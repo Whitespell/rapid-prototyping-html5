@@ -16,7 +16,6 @@
 }
 
 .profile {
-    margin-top: 10px;
     position: relative;
     width: 100%;
     padding-left: 30px;
@@ -34,7 +33,6 @@
     -moz-border-radius: 3px;
     border-radius: 3px;
     border-top: 1px solid #e8e8e8;
-    border-bottom: 1px solid #e8e8e8;
 }
 
 /* iPads (portrait and landscape) ----------- */
