@@ -130,11 +130,11 @@
             },
             "remote_html": {
                 "desktop": {
-                    "src": "{@this}/comps/nav/nav.html",
+                    "src": "{@this}/comps/nav/trending.html",
                     "version": ""
                 },
                 "mobile": {
-                    "src": "{@this}/comps/nav/nav.html",
+                    "src": "{@this}/comps/nav/trending.html",
                     "version": ""
                 }
             },
@@ -151,11 +151,11 @@
             },
             "remote_js": {
                 "desktop": {
-                    "src": ["{@this}/comps/nav/nav.js"],
+                    "src": ["{@this}/comps/nav/trending.js"],
                     "version": ""
                 },
                 "mobile": {
-                    "src": ["{@this}/comps/nav/nav.js"],
+                    "src": ["{@this}/comps/nav/trending.js"],
                     "version": ""
                 }
             },
@@ -204,7 +204,7 @@
             "position": "application"
         },
 
-        "newsfeed": {
+        "home": {
             "active": false,
             "defaultStyle": {
                 "desktop": "position: absolute;width: 100%;min-height: 100%;margin-top:60px;text-align:center;",
@@ -212,32 +212,32 @@
             },
             "remote_html": {
                 "desktop": {
-                    "src": "{@this}/comps/newsfeed/newsfeed.html",
+                    "src": "{@this}/comps/home/home.html",
                     "version": ""
                 },
                 "mobile": {
-                    "src": "{@this}/comps/newsfeed/newsfeed.html",
+                    "src": "{@this}/comps/home/home.html",
                     "version": ""
                 }
             },
             "remote_css": {
                 "mobile": {
-                    "src": ["{@this}/comps/newsfeed/newsfeed.css"],
+                    "src": ["{@this}/comps/home/home.css"],
                     "version": ""
                 },
                 "desktop": {
-                    "src": ["{@this}/comps/newsfeed/newsfeed.css"],
+                    "src": ["{@this}/comps/home/home.css"],
                     "version": ""
                 }
 
             },
             "remote_js": {
                 "desktop": {
-                    "src": ["{@this}/comps/newsfeed/newsfeed.js"],
+                    "src": ["{@this}/comps/home/home.js"],
                     "version": ""
                 },
                 "mobile": {
-                    "src": ["{@this}/comps/newsfeed/newsfeed.js"],
+                    "src": ["{@this}/comps/home/home.js"],
                     "version": ""
                 }
             },

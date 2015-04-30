@@ -10,7 +10,7 @@ var gestures = {
                 el.innerHTML = '<i class="fa fa-cog fa-spin"></i>';
 
                 wsUI.layout.deactivateComponent("suggestions");
-                wsUI.layout.activateComponent("newsfeed");
+                wsUI.layout.activateComponent("home");
                 wsUI.layout.activateComponent("bottombar");
 
                 DOM.transform(el,"opacity", "1");
@@ -30,7 +30,7 @@ var gestures = {
                 el.innerHTML = '<i class="fa fa-cog fa-spin"></i>';
 
                 wsUI.layout.deactivateComponent("suggestions");
-                wsUI.layout.activateComponent("newsfeed");
+                wsUI.layout.activateComponent("home");
                 wsUI.layout.activateComponent("bottombar");
 
                 DOM.transform(el,"opacity", "1");
