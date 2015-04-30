@@ -58,27 +58,40 @@ var gestures = {
             cancel: function(el) {
                 DOM.transform(el,"opacity", "1");
             }
-        },
-
-        "followButton": {
-            touch: function (el) {
-                DOM.transform(el, "opacity", "0.3");
-            },
-            release: function (el) {
-                toggleFollow(el.getAttribute("data-id"));
-            },
-            after: function(el) {
-                DOM.transform(el, "opacity", "1");
-            },
-            cancel: function(el) {
-                DOM.transform(el, "opacity", "1");
-            }
         }
 
     },
 
     collective: { //classes
-       //todo(pim) add follow and more button functionality
+
+    "followButton": {
+        touch: function (el) {
+            DOM.transform(el, "opacity", "0.3");
+        },
+        release: function (el) {
+            toggleFollow(el.getAttribute("data-id"));
+        },
+        after: function(el) {
+            DOM.transform(el, "opacity", "1");
+        },
+        cancel: function(el) {
+            DOM.transform(el, "opacity", "1");
+        }
+    },
+    "moreButton": {
+        touch: function (el) {
+            DOM.transform(el, "opacity", "0.3");
+        },
+        release: function (el) {
+           alert("More info");
+        },
+        after: function(el) {
+            DOM.transform(el, "opacity", "1");
+        },
+        cancel: function(el) {
+            DOM.transform(el, "opacity", "1");
+        }
+    }
     }
 }
 
