@@ -3,15 +3,6 @@ var gestures = {
 
     unique: { // ids
 
-        "searchBar" : {
-            touch: function(el) {
-                el.focus();
-                el.value = "";
-            }
-        }
-
-
-
     },
 
     collective: { //classes

@@ -81,7 +81,7 @@ var gestures = {
     }
 }
 
-wsUI.ui.addGestures("{{componentName}}", gestures);
+wsUI.ui.addGesturnaves("{{componentName}}", gestures);
 
 
 if (!wsUI.d.isset("$categories")) {
