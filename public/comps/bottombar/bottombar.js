@@ -7,11 +7,10 @@ var gestures = {
                 DOM.transform(el,"opacity", "0.3");
             },
             release: function(el) {
-                el.innerHTML = '<i class="fa fa-cog fa-spin"></i>';
 
                 wsUI.layout.updatePage({
                     components: ["home"],
-                    updates: ["main"]
+                    updates: ["home"]
                 }, true);
 
                 DOM.transform(el,"opacity", "1");

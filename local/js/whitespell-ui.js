@@ -1157,7 +1157,6 @@ function Layout() {
                 //destroy the current component
                 structure[data.components[i]].destruct();
 
-
                 // load in the new one.
                 var comp = new Component(type, data.updates[i], data.components[i]);
                 document.getElementById(data.components[i]).innerHTML = comp.update;
