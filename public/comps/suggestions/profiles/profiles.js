@@ -29,10 +29,9 @@ var gestures = {
             release: function(el) {
                 el.innerHTML = '<i class="fa fa-cog fa-spin"></i>';
 
-                wsUI.layout.updatePage({
-                    components: ["suggestions"],
-                    updates: ["suggestions->profiles"]
-                }, true);
+                wsUI.layout.deactivateComponent("suggestions");
+                wsUI.layout.activateComponent("newsfeed");
+                wsUI.layout.activateComponent("bottombar");
 
                 DOM.transform(el,"opacity", "1");
             },
