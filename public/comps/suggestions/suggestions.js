@@ -7,7 +7,7 @@ var toggleCard = function (id) {
         categoryToggles[id] = true;
         success.className = "animated fadeIn"; // fade it in
         DOM.transform(success, "display", "block");
-        DOM.transform(document.getElementById("followButton-"+id), "background", "#00CCFF");
+        DOM.transform(document.getElementById("followButton-"+id), "background", "#2e88bf");
         DOM.transform(document.getElementById("followButton-"+id), "color", "#FFFFFF");
         document.getElementById("followButton-"+id).innerHTML = '<i class="fa fa-user-times"></i> Unfollow';
     } else {
