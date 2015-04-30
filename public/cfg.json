@@ -242,6 +242,42 @@
                 }
             },
 
+            "updates": {
+                "home->trending": {
+                    "remote_html": {
+                        "desktop": {
+                            "src": "{@this}/comps/home/trending/trending.html",
+                            "version": ""
+                        },
+                        "mobile": {
+                            "src": "{@this}/comps/home/trending/trending.html",
+                            "version": ""
+                        }
+                    },
+                    "remote_css": {
+                        "mobile": {
+                            "src": ["{@this}/comps/home/trending/trending.css"],
+                            "version": ""
+                        },
+                        "desktop": {
+                            "src": ["{@this}/comps/home/trending/trending.css"],
+                            "version": ""
+                        }
+
+                    },
+                    "remote_js": {
+                        "desktop": {
+                            "src": ["{@this}/comps/home/trending/trending.js"],
+                            "version": ""
+                        },
+                        "mobile": {
+                            "src": ["{@this}/comps/home/trending/trending.js"],
+                            "version": ""
+                        }
+                    }
+                }
+            },
+
             "position": "application"
         }
     }
