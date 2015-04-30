@@ -7,8 +7,11 @@ var toggleCard = function (id) {
         categoryToggles[id] = true;
         success.className = "animated fadeIn"; // fade it in
         DOM.transform(success, "display", "block");
+        DOM.transform(document.getElementById("followButton-"+id), "background", "none");
+
     } else {
         categoryToggles[id] = false;
+        DOM.transform(document.getElementById("followButton-"+id), "background", "blue");
         success.className = "animated fadeOut"; // fade it out
     }
 }
