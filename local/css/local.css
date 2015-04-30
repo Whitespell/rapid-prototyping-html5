@@ -1,0 +1,185 @@
+/* Globals */
+
+wsv {
+    /* make sure to run html minifier to remove white spaces between variables by default*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+
+    /* Disable Select */
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: white;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: white;
+}
+
+:-ms-input-placeholder {
+    color: white;
+}
+
+#application {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+
+}
+
+html {
+    -ms-touch-action: none;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    *zoom: 1;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0;
+    /*background:url("../img/white_gradient.jpg") fixed 80% 50% #212121;*/
+}
+
+body:before, body:after {
+    content: "";
+    display: table;
+}
+
+body:after {
+    clear: both;
+}
+
+::selection {
+    color: white;
+    background: #3796cf;
+}
+
+::-moz-selection {
+    color: white;
+    background: #3796cf;
+}
+
+
+/* Regular Branding */
+
+.logo {
+    min-width: 100px;
+    width: 20%;
+    max-width: 200px;
+}
+
+h1 {
+    font-size:1.5em;
+    font-weight: 100;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 8px black;
+}
+
+h2 {
+   font-size:1.2em;
+    font-weight: 200;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 8px black;
+}
+
+/* Regular Buttons */
+
+.fullWidthBottomButton {
+    width: 100%;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    font-size: 1.5em;
+    font-weight: 200;
+    color: #FFFFFF;
+    -webkit-appearance:none;
+    min-height: 40px;
+    outline: none;
+    box-shadow: none !important;
+    border: none;
+    background: #2e88bf;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+}
+.fullWidthButtonBackground {
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: 200;
+    color: #FFFFFF;
+    -webkit-appearance:none;
+    min-height: 80px;
+    outline: none;
+    box-shadow: none !important;
+    border: none;
+    background: #FFFFFF;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn {
+    background: #2e88bf;
+    background-image: -webkit-linear-gradient(top, #2e88bf, #2980b9);
+    background-image: -moz-linear-gradient(top, #2e88bf, #2980b9);
+    background-image: -ms-linear-gradient(top, #2e88bf, #2980b9);
+    background-image: -o-linear-gradient(top, #2e88bf, #2980b9);
+    background-image: linear-gradient(to bottom, #2e88bf, #2980b9);
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    width: 95%;
+    margin: auto auto 10px;
+}
+
+/* Regular Elements */
+
+.tag {
+    background: #e8e8e8;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #212121;
+    padding: 2px 6px 2px 6px;
+    margin-left: 3px;
+}
+
+.circle {
+    float: left;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-border-radius: 99em;
+    -moz-border-radius: 99em;
+    border-radius: 99em;
+    border: 3px solid #2e88bf;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}

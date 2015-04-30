@@ -1,0 +1,248 @@
+{
+    "dT": "{@this}/deviceTypes.js",
+
+    "components": {
+
+        "login": {
+            "active": true,
+            "defaultStyle": {
+                "desktop": "position: absolute;width: 100%;min-height: 100%;",
+                "mobile": "position: absolute;width: 100%;min-height: 100%;"
+            },
+            "remote_html": {
+                "desktop": {
+                    "src": "{@this}/comps/login/login.html",
+                    "version": ""
+                },
+                "mobile": {
+                    "src": "{@this}/comps/login/login.html",
+                    "version": ""
+                }
+            },
+            "remote_css": {
+                "mobile": {
+                    "src": ["{@this}/comps/login/login.css"],
+                    "version": ""
+                },
+                "desktop": {
+                    "src": ["{@this}/comps/login/login.css"],
+                    "version": ""
+                }
+
+            },
+            "remote_js": {
+                "desktop": {
+                    "src": ["{@this}/comps/login/login.js"],
+                    "version": ""
+                },
+                "mobile": {
+                    "src": ["{@this}/comps/login/login.js"],
+                    "version": ""
+                }
+            },
+
+            "position": "application"
+        },
+
+
+        "suggestions": {
+            "active": false,
+            "defaultStyle": {
+                "desktop": "position: absolute;width: 100%;min-height: 100%;margin-top:60px;",
+                "mobile": "position: absolute;width: 100%;min-height: 100%;margin-top:60px;"
+            },
+            "remote_html": {
+                "desktop": {
+                    "src": "{@this}/comps/suggestions/suggestions.html",
+                    "version": ""
+                },
+                "mobile": {
+                    "src": "{@this}/comps/suggestions/suggestions.html",
+                    "version": ""
+                }
+            },
+            "remote_css": {
+                "mobile": {
+                    "src": ["{@this}/comps/suggestions/suggestions.css"],
+                    "version": ""
+                },
+                "desktop": {
+                    "src": ["{@this}/comps/suggestions/suggestions.css"],
+                    "version": ""
+                }
+
+            },
+            "remote_js": {
+                "desktop": {
+                    "src": ["{@this}/comps/suggestions/suggestions.js"],
+                    "version": ""
+                },
+                "mobile": {
+                    "src": ["{@this}/comps/suggestions/suggestions.js"],
+                    "version": ""
+                }
+            },
+
+            "updates": {
+                "suggestions->profiles" : {
+                    "remote_html": {
+                        "desktop": {
+                            "src": "{@this}/comps/suggestions/profiles/profiles.html",
+                            "version": ""
+                        },
+                        "mobile": {
+                            "src": "{@this}/comps/suggestions/profiles/profiles.html",
+                            "version": ""
+                        }
+                    },
+                    "remote_css": {
+                        "mobile": {
+                            "src": ["{@this}/comps/suggestions/profiles/profiles.css"],
+                            "version": ""
+                        },
+                        "desktop": {
+                            "src": ["{@this}/comps/suggestions/profiles/profiles.css"],
+                            "version": ""
+                        }
+
+                    },
+                    "remote_js": {
+                        "desktop": {
+                            "src": ["{@this}/comps/suggestions/profiles/profiles.js"],
+                            "version": ""
+                        },
+                        "mobile": {
+                            "src": ["{@this}/comps/suggestions/profiles/profiles.js"],
+                            "version": ""
+                        }
+                    }
+                }
+            },
+
+            "position": "application"
+        },
+
+        "nav": {
+            "active": false,
+            "defaultStyle": {
+                "desktop": "position: absolute;width: 100%;min-height: 60px;",
+                "mobile": "position: absolute;width: 100%;min-height: 60px;"
+            },
+            "remote_html": {
+                "desktop": {
+                    "src": "{@this}/comps/nav/nav.html",
+                    "version": ""
+                },
+                "mobile": {
+                    "src": "{@this}/comps/nav/nav.html",
+                    "version": ""
+                }
+            },
+            "remote_css": {
+                "mobile": {
+                    "src": ["{@this}/comps/nav/nav.css"],
+                    "version": ""
+                },
+                "desktop": {
+                    "src": ["{@this}/comps/nav/nav.css"],
+                    "version": ""
+                }
+
+            },
+            "remote_js": {
+                "desktop": {
+                    "src": ["{@this}/comps/nav/nav.js"],
+                    "version": ""
+                },
+                "mobile": {
+                    "src": ["{@this}/comps/nav/nav.js"],
+                    "version": ""
+                }
+            },
+
+            "position": "application"
+        },
+
+        "bottombar": {
+            "active": false,
+            "defaultStyle": {
+                "desktop": "position: fixed;width: 100%;min-height: 80px;bottom:0;left:0;",
+                "mobile": "position: fixed;width: 100%;min-height: 80px;bottom:0;left:0;"
+            },
+            "remote_html": {
+                "desktop": {
+                    "src": "{@this}/comps/bottombar/bottombar.html",
+                    "version": ""
+                },
+                "mobile": {
+                    "src": "{@this}/comps/bottombar/bottombar.html",
+                    "version": ""
+                }
+            },
+            "remote_css": {
+                "mobile": {
+                    "src": ["{@this}/comps/bottombar/bottombar.css"],
+                    "version": ""
+                },
+                "desktop": {
+                    "src": ["{@this}/comps/bottombar/bottombar.css"],
+                    "version": ""
+                }
+
+            },
+            "remote_js": {
+                "desktop": {
+                    "src": ["{@this}/comps/bottombar/bottombar.js"],
+                    "version": ""
+                },
+                "mobile": {
+                    "src": ["{@this}/comps/bottombar/bottombar.js"],
+                    "version": ""
+                }
+            },
+
+            "position": "application"
+        },
+
+        "newsfeed": {
+            "active": false,
+            "defaultStyle": {
+                "desktop": "position: absolute;width: 100%;min-height: 100%;margin-top:60px;text-align:center;",
+                "mobile": "position: absolute;width: 100%;min-height: 100%;margin-top:60px;text-align:center;"
+            },
+            "remote_html": {
+                "desktop": {
+                    "src": "{@this}/comps/newsfeed/newsfeed.html",
+                    "version": ""
+                },
+                "mobile": {
+                    "src": "{@this}/comps/newsfeed/newsfeed.html",
+                    "version": ""
+                }
+            },
+            "remote_css": {
+                "mobile": {
+                    "src": ["{@this}/comps/newsfeed/newsfeed.css"],
+                    "version": ""
+                },
+                "desktop": {
+                    "src": ["{@this}/comps/newsfeed/newsfeed.css"],
+                    "version": ""
+                }
+
+            },
+            "remote_js": {
+                "desktop": {
+                    "src": ["{@this}/comps/newsfeed/newsfeed.js"],
+                    "version": ""
+                },
+                "mobile": {
+                    "src": ["{@this}/comps/newsfeed/newsfeed.js"],
+                    "version": ""
+                }
+            },
+
+            "position": "application"
+        }
+    }
+}

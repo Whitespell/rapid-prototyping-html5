@@ -1,0 +1,168 @@
+#login {
+    /* This image will be displayed fullscreen */
+    background:url('img/wakeboarder.jpg') no-repeat 30% 50%;
+
+    /* Ensure the html element always takes up the full height of the browser window */
+    min-height:100%;
+
+    /* The Magic */
+    background-size:cover;
+}
+
+section.home_wrapper {
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+section.home_wrapper .or {
+    width: 100%;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #212121;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section.action_buttons {
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+}
+
+section.home_wrapper p.action_line {
+    font-size: 1.4em;
+    color: #3796cf;
+}
+
+.whitespellLoginComponent input{
+    -webkit-appearance:none;
+    width: 100%;
+    outline: none;
+    box-shadow: none !important;
+    border: none;
+    background-size: 30px 20px;
+    padding-left:50px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 0.8em;
+    color: #FFFFFF;
+}
+
+.whitespellLoginComponent .username{
+    background: url("{@this}img/login/user.svg") no-repeat scroll 8px 15px rgba(46, 136, 191, 0.5);
+    background-size: 30px 20px;
+}
+
+.whitespellLoginComponent .email {
+    background: url("{@this}img/login/envelope.svg") no-repeat scroll 8px 15px rgba(46, 136, 191, 0.5);
+    background-size: 30px 20px;
+}
+
+.whitespellLoginComponent .password{
+    background: url("{@this}img/login/asterisk.svg") no-repeat scroll 8px 15px rgba(46, 136, 191, 0.5);
+    background-size: 30px 20px;
+}
+
+
+a.btn, input[type='submit'] {
+    font-size: 4em;
+    font-weight: 200;
+    color: #FFFFFF;
+    background-color: #2e88bf;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.socialLogin, .whitespellLoginComponent {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.whitespellLoginComponent .actionButton {
+    font-size: 0.9em;
+    font-weight: 200;
+    color: #FFFFFF;
+    margin-top: 5px;
+    -webkit-appearance:none;
+    width: 49.75%;
+    min-height: 40px;
+    outline: none;
+    box-shadow: none !important;
+    border: none;
+    background: #2e88bf;
+    padding-left:20px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    display: inline-block;
+    text-align: left;
+}
+
+.whitespellLoginComponent .fullWidthActionButton {
+    font-size: 0.9em;
+    font-weight: 200;
+    color: #FFFFFF;
+    margin-top: 5px;
+    -webkit-appearance:none;
+    width: 100%;
+    min-height: 40px;
+    outline: none;
+    box-shadow: none !important;
+    border: none;
+    background: #2e88bf;
+    padding-left:20px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    display: inline-block;
+    text-align: left;
+}
+
+
+
+
+.whitespellLoginComponent .smallActionButton {
+    font-size: 0.9em;
+    font-weight: 200;
+    color: #FFFFFF;
+    margin-top: 5px;
+    -webkit-appearance:none;
+    width: 49.75%;
+    min-height: 20px;
+    outline: none;
+    box-shadow: none !important;
+    border: none;
+    background: #3f409c;
+    padding-left:20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+    text-align: left;
+}
+
+.whitespellLoginComponent .fullWidthSmallActionButton {
+    font-size: 0.9em;
+    font-weight: 200;
+    color: #FFFFFF;
+    margin-top: 5px;
+    -webkit-appearance:none;
+    width: 100%;
+    min-height: 20px;
+    outline: none;
+    box-shadow: none !important;
+    border: none;
+    background: #3f409c;
+    padding-left:20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+    text-align: left;
+
+}
+
+.whitespellLoginComponent .errorMessage{
+    background: rgba(150, 0, 0, 0.5);
+    width: 100%;
+    color: #FFFFFF;
+    display: none;
+}

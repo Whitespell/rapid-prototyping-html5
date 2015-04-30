@@ -1,0 +1,26 @@
+<header id="header">
+    <a href="#"><h1 id="logo"><img src="{@this}/img/whitespell-logo.svg" alt="Workfloor Logo"></h1></a>
+
+    <a class="btn" id="user-nav-trigger" href="#"><span class="ss-icon ss-standard">navigatedown</span></a>
+
+    <div class="notification" id="notification">
+        <div class='icon'><span class="ss-icon ss-standard">check</span></div>
+        <div class='content'>
+            <h5>Saved</h5>
+            <small>nav.js was saved to the cloud</small>
+        </div>
+    </div>
+
+    <nav class="user-nav hidden" id="user-nav">
+        <ul class="no-bullets">
+            <a href="#"><li>Dashboard</li></a>
+            <a href="/settings"><li class="active">Account Settings</li></a>
+            <a href="#"><li>Log out</li></a>
+        </ul>
+    </nav>
+
+    <div class="user-profile">
+        <h4 class="h6">Morning, <var name="$firstName" vartype="string">{value}</var> <var name="$lastName" vartype="obj">{value}</var></h4>
+        <small><var name="$position" vartype="obj">{value}</var> at <var name="$company" vartype="obj">{value}</var></small>
+    </div>
+</header>

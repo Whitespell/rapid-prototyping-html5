@@ -1,0 +1,23 @@
+#bottombar {
+
+    background: -webkit-linear-gradient(90deg, #232526 10%, #414345 90%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(90deg, #232526 10%, #414345 90%); /* FF3.6+ */
+    background:     -ms-linear-gradient(90deg, #232526 10%, #414345 90%); /* IE10 */
+    background:      -o-linear-gradient(90deg, #232526 10%, #414345 90%); /* Opera 11.10+ */
+    background:         linear-gradient(90deg, #232526 10%, #414345 90%); /* W3C */
+    height: 80px;
+    min-width: 320px;
+
+}
+.button {
+    width: 20%;
+    height: 100%;
+    color: #FFFFFF;
+    float: left;
+    text-align: center;
+    font-size: 3em;
+}
+
+#upload {
+    background: #212121;
+}

@@ -1,0 +1,97 @@
+#suggestions {
+    width: 100%;
+}
+
+.buttonContainer {
+    height: 40px;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    display: none;
+    opacity: 0.9;
+}
+
+.leftButton {
+    border-right: 1px solid darkgray;
+    background: #212121;
+    color: #f3f3f3;
+}
+
+.updateWrapper {
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transition: width 0.3s ease;
+    -moz-transition: width 0.3s ease;
+    -ms-transition: width 0.3s ease;
+    -o-transition: width 0.3s ease;
+    transition: width 0.3s ease;
+    text-align: center;
+    margin-left: auto;
+    display: block;
+}
+
+.category {
+    position: relative;
+    width: 49%;
+    min-height: 200px;
+    min-width: 150px;
+    max-width: 350px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 1px solid #e8e8e8;
+    color: #f3f3f3;
+    display: inline-block;
+    border: 1px solid #e8e8e8;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    .category {
+        width: 50%;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width: 1224px) {
+    .category {
+        width: 50%;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width: 1824px) {
+    .category {
+        width: 25%;
+    }
+}
+
+.category .categoryDetails {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    font-weight: 300;
+    z-index: 4;
+    background: #FFFFFF;
+    position: absolute;
+    font-size: 0.9em;
+    color: #212121;
+    position: absolute;
+    height: 20%;
+    bottom: 0;
+    left: 0;
+    }
+
+
