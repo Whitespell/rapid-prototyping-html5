@@ -1,3 +1,12 @@
+var currentButtonPressed = "homeButton";
+
+DOM.transform(document.getElementById(currentButtonPressed), "background", "#212121");
+
+var buttonEffect = function(toggle) {
+    DOM.transform(document.getElementById(currentButtonPressed), "background", "none");
+    currentButtonPressed = toggle;
+    DOM.transform(document.getElementById(currentButtonPressed), "background", "#212121");
+}
 var gestures = {
 
     unique: { // ids
@@ -11,7 +20,7 @@ var gestures = {
                     components: ["home"],
                     updates: ["home"]
                 }, true);
-
+                buttonEffect(el.getAttribute("id"));
                 DOM.transform(el,"opacity", "1");
             },
             after: function(el) {
@@ -31,6 +40,7 @@ var gestures = {
                     components: ["home"],
                     updates: ["home->trending"]
                 }, true);
+                buttonEffect(el.getAttribute("id"));
 
                 DOM.transform(el,"opacity", "1");
             },

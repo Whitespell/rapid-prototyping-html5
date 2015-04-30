@@ -1,4 +1,4 @@
-#newsfeed {
+#home {
 width: 100%;
 margin: auto;
 }
@@ -178,3 +178,29 @@ and (min-width: 1824px) {
     font-size: 0.8em;
     float: left;
 }
+
+.notify {
+    width: 100%;
+    color: #212121;
+    padding: 15px;
+    text-align: left;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #212121;
+}
+
+.notify .icon {
+    width: 30%;
+    font-size: 3em;
+    float: left;
+    text-align: center;
+}
+
+.notify .text {
+    width: 70%;
+    font-size: 1em;
+    float: right;
+}
+
+
