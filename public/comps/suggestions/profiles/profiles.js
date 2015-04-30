@@ -21,6 +21,27 @@ var gestures = {
             cancel: function(el) {
                 DOM.transform(el,"opacity", "1");
             }
+        },
+        "skipButton" : {
+            touch: function(el) {
+                DOM.transform(el,"opacity", "0.3");
+            },
+            release: function(el) {
+                el.innerHTML = '<i class="fa fa-cog fa-spin"></i>';
+
+                wsUI.layout.updatePage({
+                    components: ["suggestions"],
+                    updates: ["suggestions->profiles"]
+                }, true);
+
+                DOM.transform(el,"opacity", "1");
+            },
+            after: function(el) {
+                DOM.transform(el,"opacity", "1");
+            },
+            cancel: function(el) {
+                DOM.transform(el,"opacity", "1");
+            }
         }
 
     },
