@@ -4,7 +4,7 @@
     "components": {
 
         "login": {
-            "active": false,
+            "active": true,
             "defaultStyle": {
                 "desktop": "position: absolute;width: 100%;min-height: 100%;",
                 "mobile": "position: absolute;width: 100%;min-height: 100%;"
@@ -123,7 +123,7 @@
         },
 
         "nav": {
-            "active": true,
+            "active": false,
             "defaultStyle": {
                 "desktop": "position: absolute;width: 100%;min-height: 60px;",
                 "mobile": "position: absolute;width: 100%;min-height: 60px;"
@@ -164,7 +164,7 @@
         },
 
         "bottombar": {
-            "active": true,
+            "active": false,
             "defaultStyle": {
                 "desktop": "position: fixed;width: 100%;min-height: 60px;bottom:0;left:0;",
                 "mobile": "position: fixed;width: 100%;min-height: 60px;bottom:0;left:0;"
@@ -205,7 +205,7 @@
         },
 
         "newsfeed": {
-            "active": true,
+            "active": false,
             "defaultStyle": {
                 "desktop": "position: absolute;width: 100%;min-height: 100%;margin-top:60px;text-align:center;",
                 "mobile": "position: absolute;width: 100%;min-height: 100%;margin-top:60px;text-align:center;"
