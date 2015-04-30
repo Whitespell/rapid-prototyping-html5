@@ -64,7 +64,7 @@ var gestures = {
             }
         },
 
-        "plusButton": {
+        "followButton": {
             touch: function (el) {
                 DOM.transform(el, "opacity", "0.3");
             },
