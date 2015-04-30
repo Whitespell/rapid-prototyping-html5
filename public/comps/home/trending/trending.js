@@ -1,1 +1,1 @@
-alert("trendinG!!!")
+console.log("Trending")
