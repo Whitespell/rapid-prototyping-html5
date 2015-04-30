@@ -173,8 +173,8 @@ and (min-width: 1824px) {
     border-radius: 3px;
     color: #212121;
     padding: 2px 6px 2px 6px;
-    margin-left: 3px;
+    margin-left: 6px;
     margin-top: 15px;
-    margin-right: 10px;
     font-size: 0.8em;
+    float: left;
 }

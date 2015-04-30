@@ -1,3 +1,6 @@
+#nav {
+    z-index: 200;
+}
 
 .stickToTop {
     z-index:6;

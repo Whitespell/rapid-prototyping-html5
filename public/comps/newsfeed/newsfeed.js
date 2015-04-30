@@ -1,1 +1,1 @@
-console.log("newsfeed loaded");
+wsUI.layout.smartScrollNavigation(document.getElementById("nav"));

@@ -1048,6 +1048,8 @@ function Layout() {
      * @type {Array}
      */
     var structure = [];
+    var navbarHidden = false;
+    var position;
 
 
     Layout.Instance = function () {
@@ -1055,6 +1057,33 @@ function Layout() {
     }
 
     Layout.Instance.prototype = {
+
+        /**
+         * smartScrollNavigation hides the element when the user scrolls down, and shows it when the user moves up.
+         * @param el
+         */
+        smartScrollNavigation: function(el) {
+
+            document.addEventListener('scroll', function (event) {
+                if (document.body.scrollHeight ==
+                    document.body.scrollTop +
+                    window.innerHeight) {
+                    console.log("bottom was reached.. do something?")
+                } else {
+                    var scrollTop = document.body.scrollTop;
+
+                    if(navbarHidden && scrollTop < position) {
+                        document.getElementById("nav").className = "animated fadeIn"; // fade it in
+                        navbarHidden = false;
+                    } else if(navbarHidden === false && scrollTop > position) {
+                        document.getElementById("nav").className = "animated fadeOut"; // fade it out
+                        navbarHidden = true;
+                    }
+
+                    position = scrollTop;
+                }
+            });
+        },
 
         /**
          * Toggles the visibility of an element in a sweet way. This is important to ensure that variables have a standardized way of being hidden to prevent falure.
