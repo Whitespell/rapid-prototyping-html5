@@ -130,11 +130,11 @@
             },
             "remote_html": {
                 "desktop": {
-                    "src": "{@this}/comps/nav/trending.html",
+                    "src": "{@this}/comps/nav/nav.html",
                     "version": ""
                 },
                 "mobile": {
-                    "src": "{@this}/comps/nav/trending.html",
+                    "src": "{@this}/comps/nav/nav.html",
                     "version": ""
                 }
             },
@@ -151,11 +151,11 @@
             },
             "remote_js": {
                 "desktop": {
-                    "src": ["{@this}/comps/nav/trending.js"],
+                    "src": ["{@this}/comps/nav/nav.js"],
                     "version": ""
                 },
                 "mobile": {
-                    "src": ["{@this}/comps/nav/trending.js"],
+                    "src": ["{@this}/comps/nav/nav.js"],
                     "version": ""
                 }
             },
