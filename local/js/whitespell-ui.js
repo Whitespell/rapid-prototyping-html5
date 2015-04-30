@@ -781,7 +781,6 @@ function UIHandler(ViewDeclaration) {
 
                 var targetElement = document.getElementById(element);
 
-                console.log(element);
 
                 UIHandler.gestures.add(UIHandler.Interaction.bindActions(targetElement, gs.unique[element], true));
 

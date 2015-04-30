@@ -11,7 +11,7 @@ var gestures = {
 
                 wsUI.layout.updatePage({
                     components: ["home"],
-                    updates: ["home->main"]
+                    updates: ["main"]
                 }, true);
 
                 DOM.transform(el,"opacity", "1");
