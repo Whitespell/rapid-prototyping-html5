@@ -1,6 +1,7 @@
 var followToggles;
 
 var toggleFollow = function (id) {
+    console.log(id);
     var toggled = followToggles[id];
     if (toggled !== true) {
         followToggles[id] = true;
