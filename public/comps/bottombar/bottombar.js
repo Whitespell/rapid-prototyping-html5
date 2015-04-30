@@ -2,7 +2,7 @@ var gestures = {
 
     unique: { // ids
 
-        "home" : {
+        "homeButton" : {
             touch: function(el) {
                 DOM.transform(el,"opacity", "0.3");
             },
@@ -23,12 +23,11 @@ var gestures = {
                 DOM.transform(el,"opacity", "1");
             }
         },
-        "trending" : {
+        "trendingButton" : {
             touch: function(el) {
                 DOM.transform(el,"opacity", "0.3");
             },
             release: function(el) {
-                el.innerHTML = '<i class="fa fa-cog fa-spin"></i>';
 
                 wsUI.layout.updatePage({
                     components: ["home"],
