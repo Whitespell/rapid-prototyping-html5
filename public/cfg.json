@@ -164,10 +164,10 @@
         },
 
         "bottombar": {
-            "active": false,
+            "active": true,
             "defaultStyle": {
-                "desktop": "position: fixed;width: 100%;min-height: 80px;bottom:0;left:0;",
-                "mobile": "position: fixed;width: 100%;min-height: 80px;bottom:0;left:0;"
+                "desktop": "position: fixed;width: 100%;min-height: 60px;bottom:0;left:0;",
+                "mobile": "position: fixed;width: 100%;min-height: 60px;bottom:0;left:0;"
             },
             "remote_html": {
                 "desktop": {
