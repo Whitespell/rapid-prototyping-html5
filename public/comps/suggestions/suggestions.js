@@ -64,14 +64,6 @@ var gestures = {
             }
         },
 
-        "playButton": {
-            touch: function (el) {
-            },
-            release: function (el) {
-                alert("hello");
-            }
-        },
-
         "plusButton": {
             touch: function (el) {
                 DOM.transform(el, "opacity", "0.3");
