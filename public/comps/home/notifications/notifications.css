@@ -108,4 +108,5 @@ and (min-width: 1824px) {
 .notification .message {
     float: right;
     margin-top: 10px;
+    text-align: left;
 }
