@@ -1,3 +1,11 @@
+var goToHome = function(el) {
+    wsUI.layout.deactivateComponent("suggestions");
+    wsUI.layout.activateComponent("home");
+    wsUI.layout.activateComponent("bottombar");
+    wsUI.layout.toggleVisibility(document.getElementById("notificationButton"));
+    wsUI.layout.toggleVisibility(document.getElementById("downloadButton"));
+}
+
 var followToggles;
 
 var toggleFollow = function (id) {
@@ -25,14 +33,7 @@ var gestures = {
                 DOM.transform(el,"opacity", "0.3");
             },
             release: function(el) {
-                el.innerHTML = '<i class="fa fa-cog fa-spin"></i>';
-
-                wsUI.layout.deactivateComponent("suggestions");
-                wsUI.layout.activateComponent("home");
-                wsUI.layout.activateComponent("bottombar");
-                wsUI.layout.toggleVisibility(document.getElementById("notificationButton"));
-                wsUI.layout.toggleVisibility(document.getElementById("downloadButton"));
-
+                goToHome();
                 DOM.transform(el,"opacity", "1");
             },
             after: function(el) {
@@ -47,11 +48,7 @@ var gestures = {
                 DOM.transform(el,"opacity", "0.3");
             },
             release: function(el) {
-                el.innerHTML = '<i class="fa fa-cog fa-spin"></i>';
-
-                wsUI.layout.deactivateComponent("suggestions");
-                wsUI.layout.activateComponent("home");
-                wsUI.layout.activateComponent("bottombar");
+                goToHome();
 
                 DOM.transform(el,"opacity", "1");
             },
