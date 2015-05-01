@@ -14,14 +14,14 @@
     width: 100%;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: 100%;
-    color: #f3f3f3;
+    color: #212121;
     display: inline-block;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -66,6 +66,8 @@ and (min-width: 1824px) {
 
 .notification .notificationPicture {
     float: left;
+    height: 30px;
+    width: 30px;
 }
 
 .notification .topNotificationBar .followButton {

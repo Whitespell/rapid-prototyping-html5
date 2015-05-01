@@ -4,7 +4,6 @@ var gestures = {
     unique: { // ids
         "notificationButton": {
             release: function(el) {
-                alert("ya");
                 wsUI.layout.updatePage({
                     components: ["home"],
                     updates: ["home->notifications"]
