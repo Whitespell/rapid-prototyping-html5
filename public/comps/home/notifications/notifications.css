@@ -66,8 +66,6 @@ and (min-width: 1824px) {
 
 .notification .notificationPicture {
     float: left;
-    height: 30px;
-    width: 30px;
 }
 
 .notification .topNotificationBar .followButton {
