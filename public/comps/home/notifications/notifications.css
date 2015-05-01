@@ -9,7 +9,7 @@
     display: block;
 }
 
-.profile {
+.notification {
     position: relative;
     width: 100%;
     padding-left: 30px;
@@ -33,7 +33,7 @@
 @media only screen
 and (min-device-width: 768px)
 and (max-device-width: 1024px) {
-    .profile {
+    .notification {
         width: 50%;
     }
 }
@@ -41,7 +41,7 @@ and (max-device-width: 1024px) {
 /* Desktops and laptops ----------- */
 @media only screen
 and (min-width: 1224px) {
-    .profile {
+    .notification {
         width: 50%;
     }
 }
@@ -49,12 +49,12 @@ and (min-width: 1224px) {
 /* Large screens ----------- */
 @media only screen
 and (min-width: 1824px) {
-    .profile {
+    .notification {
         width: 25%;
     }
 }
 
-.profile .topProfileBar {
+.notification .topNotificationBar {
     position:relative;
     top:0;
     left:0;
@@ -64,11 +64,11 @@ and (min-width: 1824px) {
 
 }
 
-.profile .profilePicture {
+.notification .notificationPicture {
     float: left;
 }
 
-.profile .topProfileBar .followButton {
+.notification .topNotificationBar .followButton {
     float: right;
     border: 1px solid #d3d3d3;
     -webkit-border-radius: 3px;
@@ -81,7 +81,7 @@ and (min-width: 1824px) {
     font-size: 0.8em;
 }
 
-.profile .topProfileBar .username {
+.notification .topNotificationBar .username {
     float: left;
     color: #2e88bf;
     margin-left: 10px;
@@ -89,7 +89,7 @@ and (min-width: 1824px) {
     font-size: 0.8em;
 }
 
-.profile .topProfileBar .moreButton {
+.notification .topNotificationBar .moreButton {
     float: right;
     border: 1px solid #d3d3d3;
     -webkit-border-radius: 3px;

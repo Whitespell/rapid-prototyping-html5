@@ -374,6 +374,39 @@
                             "version": ""
                         }
                     }
+                },
+                "home->notifications": {
+                    "remote_html": {
+                        "desktop": {
+                            "src": "{@this}/comps/home/notifications/notifications.html",
+                            "version": ""
+                        },
+                        "mobile": {
+                            "src": "{@this}/comps/home/notifications/notifications.html",
+                            "version": ""
+                        }
+                    },
+                    "remote_css": {
+                        "mobile": {
+                            "src": ["{@this}/comps/home/notifications/notifications.css"],
+                            "version": ""
+                        },
+                        "desktop": {
+                            "src": ["{@this}/comps/home/notifications/notifications.css"],
+                            "version": ""
+                        }
+
+                    },
+                    "remote_js": {
+                        "desktop": {
+                            "src": ["{@this}/comps/home/notifications/notifications.js"],
+                            "version": ""
+                        },
+                        "mobile": {
+                            "src": ["{@this}/comps/home/notifications/notifications.js"],
+                            "version": ""
+                        }
+                    }
                 }
             },
 
