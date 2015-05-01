@@ -7,12 +7,12 @@
 }
 
 .profile .profileTop {
-    height: 20%;
+    height: 100px;
     background: red;
     width: 100%;
 }
 .profile .profileButtons {
-    height: 20%;
+    height: 50px;
     width: 100%;
     background: blue;
 }
