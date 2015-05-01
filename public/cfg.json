@@ -308,6 +308,72 @@
                             "version": ""
                         }
                     }
+                },
+                "home->search": {
+                    "remote_html": {
+                        "desktop": {
+                            "src": "{@this}/comps/home/search/search.html",
+                            "version": ""
+                        },
+                        "mobile": {
+                            "src": "{@this}/comps/home/search/search.html",
+                            "version": ""
+                        }
+                    },
+                    "remote_css": {
+                        "mobile": {
+                            "src": ["{@this}/comps/home/search/search.css"],
+                            "version": ""
+                        },
+                        "desktop": {
+                            "src": ["{@this}/comps/home/search/search.css"],
+                            "version": ""
+                        }
+
+                    },
+                    "remote_js": {
+                        "desktop": {
+                            "src": ["{@this}/comps/home/search/search.js"],
+                            "version": ""
+                        },
+                        "mobile": {
+                            "src": ["{@this}/comps/home/search/search.js"],
+                            "version": ""
+                        }
+                    }
+                },
+                "home->profile": {
+                    "remote_html": {
+                        "desktop": {
+                            "src": "{@this}/comps/home/profile/profile.html",
+                            "version": ""
+                        },
+                        "mobile": {
+                            "src": "{@this}/comps/home/profile/profile.html",
+                            "version": ""
+                        }
+                    },
+                    "remote_css": {
+                        "mobile": {
+                            "src": ["{@this}/comps/home/profile/profile.css"],
+                            "version": ""
+                        },
+                        "desktop": {
+                            "src": ["{@this}/comps/home/profile/profile.css"],
+                            "version": ""
+                        }
+
+                    },
+                    "remote_js": {
+                        "desktop": {
+                            "src": ["{@this}/comps/home/profile/profile.js"],
+                            "version": ""
+                        },
+                        "mobile": {
+                            "src": ["{@this}/comps/home/profile/profile.js"],
+                            "version": ""
+                        }
+                    }
                 }
             },
 

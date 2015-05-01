@@ -61,6 +61,47 @@ var gestures = {
                     components: ["home"],
                     updates: ["home->upload"]
                 }, true);
+
+                DOM.transform(el,"opacity", "1");
+            },
+            after: function(el) {
+                DOM.transform(el,"opacity", "1");
+            },
+            cancel: function(el) {
+                DOM.transform(el,"opacity", "1");
+            }
+        },
+        "searchButton" : {
+            touch: function(el) {
+                DOM.transform(el,"opacity", "0.3");
+            },
+            release: function(el) {
+
+                wsUI.layout.updatePage({
+                    components: ["home"],
+                    updates: ["home->search"]
+                }, true);
+                buttonEffect(el.getAttribute("id"));
+
+                DOM.transform(el,"opacity", "1");
+            },
+            after: function(el) {
+                DOM.transform(el,"opacity", "1");
+            },
+            cancel: function(el) {
+                DOM.transform(el,"opacity", "1");
+            }
+        },
+        "profileButton" : {
+            touch: function(el) {
+                DOM.transform(el,"opacity", "0.3");
+            },
+            release: function(el) {
+
+                wsUI.layout.updatePage({
+                    components: ["home"],
+                    updates: ["home->profile"]
+                }, true);
                 buttonEffect(el.getAttribute("id"));
 
                 DOM.transform(el,"opacity", "1");
