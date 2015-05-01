@@ -30,6 +30,8 @@ var gestures = {
                 wsUI.layout.deactivateComponent("suggestions");
                 wsUI.layout.activateComponent("home");
                 wsUI.layout.activateComponent("bottombar");
+                wsUI.layout.toggleVisibility(document.getElementById("notificationButton"));
+                wsUI.layout.toggleVisibility(document.getElementById("downloadButton"));
 
                 DOM.transform(el,"opacity", "1");
             },
