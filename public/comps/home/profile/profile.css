@@ -10,10 +10,19 @@
     height: 100px;
     width: 100%;
 }
+.profile .profileTop .profilePicture {
+    float: left;
+    width: 30%;
+}
+
+.profile .profileTop .profileInfo {
+    float: right;
+    width: 70%;
+    background: #e8e8e8;
+}
 .profile .profileButtons {
     height: 50px;
     width: 100%;
-    background: #e8e8e8;
 }
 
 .profile .profileButtons .profileButton {
