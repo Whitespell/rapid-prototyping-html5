@@ -275,6 +275,39 @@
                             "version": ""
                         }
                     }
+                },
+                "home->upload": {
+                    "remote_html": {
+                        "desktop": {
+                            "src": "{@this}/comps/home/upload/upload.html",
+                            "version": ""
+                        },
+                        "mobile": {
+                            "src": "{@this}/comps/home/upload/upload.html",
+                            "version": ""
+                        }
+                    },
+                    "remote_css": {
+                        "mobile": {
+                            "src": ["{@this}/comps/home/upload/upload.css"],
+                            "version": ""
+                        },
+                        "desktop": {
+                            "src": ["{@this}/comps/home/upload/upload.css"],
+                            "version": ""
+                        }
+
+                    },
+                    "remote_js": {
+                        "desktop": {
+                            "src": ["{@this}/comps/home/upload/upload.js"],
+                            "version": ""
+                        },
+                        "mobile": {
+                            "src": ["{@this}/comps/home/upload/upload.js"],
+                            "version": ""
+                        }
+                    }
                 }
             },
 

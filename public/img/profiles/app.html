@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 5.0 Strict//EN">
+<!-- saved from url=(0084)http://localhost:63344/peak/Mobile%20App/build/peak/www/app.html#home:home->trending -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+    <!-- turn off any caching -->
+    <meta http-equiv="cache-control" content="max-age=0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
+    <meta http-equiv="pragma" content="no-cache">
+    <link rel="stylesheet" href="http://localhost:63344/peak/Mobile%20App/build/peak/www/css/local.css">
+    <link rel="stylesheet" href="http://localhost:63344/peak/Mobile%20App/build/peak/www/css/animate.css">
+    <link rel="stylesheet" href="http://localhost:63344/peak/Mobile%20App/build/peak/www/css/fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://localhost:63344/peak/Mobile%20App/build/peak/www/css/fonts.css">
+
+<script id="script982.7311295084655" defer="true" type="text/javascript">
+var deviceType = "macbook";
+deviceType = getDeviceType();
+
+
+function getDeviceType() {
+    var uA = navigator.userAgent;
+    var toReturn = "";
+
+    if(uA.indexOf("tablet")) {
+
+    }
+
+   if(navigator.userAgent.match(/iPad/i)){
+
+    }
+
+    if(navigator.userAgent.match(/iPhone/i)){
+        //code for iPhone here
+        return "mobile";
+    }
+
+    if(navigator.userAgent.match(/Android/i)){
+        //code for Android here
+        return "mobile";
+    }
+
+
+    if(navigator.userAgent.match(/BlackBerry/i)){
+        //code for BlackBerry here
+    }
+
+
+    if(navigator.userAgent.match(/webOS/i)){
+        //code for webOS here
+    }
+
+    return "desktop";//navigator.userAgent;
+
+}
+
+</script><style id="style8.463939651846886" type="text/css">#nav {
+    z-index: 200;
+}
+
+.stickToTop {
+    z-index:6;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 7px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+
+.navlogo {
+    height: 100%;
+    margin: 10px auto;
+}
+
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #2e88bf;
+    padding: 0;
+    height: 50px;
+    margin: 0 auto 10px;
+    z-index: 200;
+    border-bottom: 1px solid #212121;
+    -webkit-box-shadow: 0 0 6px #212121;
+    -moz-box-shadow: 0 0 6px #212121;
+    box-shadow: 0 0 6px #212121;
+}
+
+.stickToTop input {
+    width: 30%;
+    max-width: 300px;
+    height: 32px;
+    font-size: 1em;
+    margin-right: 1%;
+    margin-top: 9px;
+    border: 1px solid #212121;
+    padding: 0;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: block;
+    min-width: 220px;
+    float: right;
+    animation:fadeIn 2000ms;
+    -webkit-animation:fadeIn 2000ms;
+    background: url("http://public.whitespell.com/peak/public//img/search.png") 5px 5px no-repeat #FFFFFF;
+    background-size: 20px 20px;
+    opacity: 1;
+
+}
+
+@media all and (max-width: 450px) {
+
+}
+
+.navigation .content{
+    min-width: 320px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align:center;
+}
+
+.optbutton {
+    text-align: center;
+    float: left;
+    display: inline-block;
+    width: 40px;
+}
+
+.searchButton {
+    text-align: center;
+    float: right;
+    margin-right: 10px;
+    display: inline-block;
+    width: 40px;
+}
+
+</style><script id="script582.8292325604707" defer="true" type="text/javascript">var gestures = {
+
+
+    unique: { // ids
+
+    },
+
+    collective: { //classes
+
+        "optbutton": {
+            release: function(el) {
+                wsUI.layout.updatePage({
+                    components: ["home"],
+                    updates: ["home"]
+                }, true);
+            }
+        }
+
+
+    }
+}
+
+wsUI.ui.addGestures("nav", gestures);</script><style id="style331.79999864660203" type="text/css">#bottombar {
+    z-index: 200;
+    background: -webkit-linear-gradient(90deg, #232526 10%, #414345 90%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(90deg, #232526 10%, #414345 90%); /* FF3.6+ */
+    background:     -ms-linear-gradient(90deg, #232526 10%, #414345 90%); /* IE10 */
+    background:      -o-linear-gradient(90deg, #232526 10%, #414345 90%); /* Opera 11.10+ */
+    background:         linear-gradient(90deg, #232526 10%, #414345 90%); /* W3C */
+    height: 60px;
+    min-width: 320px;
+
+}
+.button {
+    width: 20%;
+    height: 100%;
+    color: #FFFFFF;
+    float: left;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 15px;
+}
+
+#upload {
+    background: #2e88bf;
+}</style><script id="script281.925956485793" defer="true" type="text/javascript">var currentButtonPressed = "homeButton";
+
+DOM.transform(document.getElementById(currentButtonPressed), "background", "#212121");
+
+var buttonEffect = function(toggle) {
+    DOM.transform(document.getElementById(currentButtonPressed), "background", "none");
+    currentButtonPressed = toggle;
+    DOM.transform(document.getElementById(currentButtonPressed), "background", "#212121");
+}
+var gestures = {
+
+    unique: { // ids
+
+        "homeButton" : {
+            touch: function(el) {
+                DOM.transform(el,"opacity", "0.3");
+            },
+            release: function(el) {
+                wsUI.layout.updatePage({
+                    components: ["home"],
+                    updates: ["home"]
+                }, true);
+                buttonEffect(el.getAttribute("id"));
+                DOM.transform(el,"opacity", "1");
+            },
+            after: function(el) {
+                DOM.transform(el,"opacity", "1");
+            },
+            cancel: function(el) {
+                DOM.transform(el,"opacity", "1");
+            }
+        },
+        "trendingButton" : {
+            touch: function(el) {
+                DOM.transform(el,"opacity", "0.3");
+            },
+            release: function(el) {
+
+                wsUI.layout.updatePage({
+                    components: ["home"],
+                    updates: ["home->trending"]
+                }, true);
+                buttonEffect(el.getAttribute("id"));
+
+                DOM.transform(el,"opacity", "1");
+            },
+            after: function(el) {
+                DOM.transform(el,"opacity", "1");
+            },
+            cancel: function(el) {
+                DOM.transform(el,"opacity", "1");
+            }
+        }
+
+    },
+
+    collective: { //classes
+    }
+}
+
+wsUI.ui.addGestures("bottombar", gestures);</script><style id="style873.988552019" type="text/css">#trending {
+    width: 100%;
+    margin: auto;
+}
+
+
+.update {
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #f3f3f3;
+    display: inline-block;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    .update {
+        width: 50%;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width: 1224px) {
+    .update {
+        width: 50%;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width: 1824px) {
+    .update {
+        width: 25%;
+    }
+}
+
+.update .topProfileBar {
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:20%;
+    min-height: 40px;
+    padding: 5px 5px;
+
+}
+
+.update .profilePicture {
+    float: left;
+}
+
+.update .topProfileBar .followButton {
+
+    float: right;
+    border: 1px solid #d3d3d3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 2px 6px 2px 6px;
+    color: #212121;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+.update .topProfileBar .hideButton {
+    float: right;
+    border: 1px solid #d3d3d3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 2px 6px 2px 6px;
+    color: #212121;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+
+.update .topProfileBar .username {
+    float: left;
+    color: #2e88bf;
+    margin-left: 10px;
+    margin-top: 12px;
+    font-size: 1em;
+}
+.update .topProfileBar .location {
+    float: left;
+    color: #2e88bf;
+    margin-left: 10px;
+    margin-top: 18px;
+    font-size: 0.8em;
+}
+
+.update .topProfileBar .moreButton {
+    float: right;
+    border: 1px solid #d3d3d3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 2px 6px 2px 6px;
+    color: #212121;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 0.8em;
+
+}
+
+.update .video .likeButton {
+    float: right;
+    border: 1px solid #d3d3d3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 2px 6px 2px 6px;
+    color: #212121;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 0.8em;
+
+}
+
+.update .video .commentButton {
+    float: right;
+    border: 1px solid #d3d3d3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 2px 6px 2px 6px;
+    color: #212121;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 0.8em;
+
+}
+
+.update .video .description {
+    float: left;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 2px 6px 2px 6px;
+    color: #212121;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 0.8em;
+
+}
+
+.update .video {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.videoTag {
+    background: #e8e8e8;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #212121;
+    padding: 2px 6px 2px 6px;
+    margin-left: 6px;
+    margin-top: 15px;
+    font-size: 0.8em;
+    float: left;
+}
+
+.notify {
+    width: 100%;
+    color: #212121;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #212121;
+}
+
+.notify .icon {
+    width: 30%;
+    font-size: 3em;
+    float: left;
+    text-align: center;
+}
+
+.notify .text {
+    width: 70%;
+    font-size: 1em;
+    float: right;
+}
+
+
+</style><script id="script20.259119104593992" defer="true" type="text/javascript">console.log("Trending")</script></head>
+<body>
+<div id="application" class="snap-content">
+<div id="nav" style="position: absolute;width: 100%;min-height: 60px;"><div class="stickToTop">
+    <div class="navigation">
+        <div class="content">
+            <div class="optbutton" data-load="login" style="cursor: pointer;"><img src="./app_files/peaklogo.svg" style="height:30px;margin-left:10px;margin-top: 8px;">
+            </div>
+        </div>
+    </div>
+</div>
+
+</div><div id="bottombar" style="position: fixed;width: 100%;min-height: 60px;bottom:0;left:0;"><div class="button" id="homeButton" style="cursor: pointer; background: none;"><i class="fa fa-bolt"></i></div>
+<div class="button" id="trendingButton" style="cursor: pointer; opacity: 1; background: rgb(33, 33, 33);"><i class="fa fa-line-chart"></i></div>
+<div class="button" id="upload"><i class="fa fa-camera"></i></div>
+<div class="button"><i class="fa fa-search"></i></div>
+<div class="button"><i class="fa fa-user"></i></div></div><div id="home" style="position: absolute;width: 100%;min-height: 100%;margin-top:60px;text-align:center;"><div id="home-&gt;trending" style=""><div class="update notify">
+    <div class="icon"><i class="fa fa-line-chart"></i></div>
+    <div class="text">
+
+        <h3>Welcome to #trending</h3>
+        <span style="font-size:0.8em;">Here you will find the hottest trending content based on your interests. Too much? Filter using the <i class="fa fa-filter"></i> Filter button..</span>
+
+    </div>
+</div></div></div></div>
+
+<script type="text/javascript" src="./app_files/whitespell-cio-1.0.0.js"></script>
+
+
+<script type="text/javascript">
+
+    var globalConfig = {
+        /**
+         * Make sure to encode the url
+         *
+         * */
+
+        //STATIC_CONTENT_URL: "http://localhost:63344/peak/Mobile%20App/public/",
+        //STATIC_CONTENT_URL: "http://10.0.0.7/public/",
+        STATIC_CONTENT_URL: "http://public.whitespell.com/peak/public/",
+        CONFIG_FILE: "cfg.json"
+    };
+
+    /**
+     * If you don't want to use websockets, do not parse an API key, otherwise, parse an API key as the first paramter.
+     * @type {Window.Whitespell}
+     */
+    var myOwnWs = new Whitespell();
+
+</script>
+<script type="text/javascript" src="./app_files/whitespell-ui.js"></script>
+<script src="./app_files/phonegap.js"></script>
+
+<script>
+     app.initialize();
+</script>
+
+
+
+<script type="text/javascript">(function () {
+        return window.SIG_EXT = {};
+      })()</script></body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>

@@ -1,0 +1,203 @@
+#trending {
+    width: 100%;
+    margin: auto;
+}
+
+
+.update {
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #f3f3f3;
+    display: inline-block;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    .update {
+        width: 50%;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width: 1224px) {
+    .update {
+        width: 50%;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width: 1824px) {
+    .update {
+        width: 25%;
+    }
+}
+
+.update .topProfileBar {
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:20%;
+    min-height: 40px;
+    padding: 5px 5px;
+
+}
+
+.update .profilePicture {
+    float: left;
+}
+
+.update .topProfileBar .followButton {
+
+    float: right;
+    border: 1px solid #d3d3d3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 2px 6px 2px 6px;
+    color: #212121;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+.update .topProfileBar .hideButton {
+    float: right;
+    border: 1px solid #d3d3d3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 2px 6px 2px 6px;
+    color: #212121;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+
+.update .topProfileBar .username {
+    float: left;
+    color: #2e88bf;
+    margin-left: 10px;
+    margin-top: 12px;
+    font-size: 1em;
+}
+.update .topProfileBar .location {
+    float: left;
+    color: #2e88bf;
+    margin-left: 10px;
+    margin-top: 18px;
+    font-size: 0.8em;
+}
+
+.update .topProfileBar .moreButton {
+    float: right;
+    border: 1px solid #d3d3d3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 2px 6px 2px 6px;
+    color: #212121;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 0.8em;
+
+}
+
+.update .video .likeButton {
+    float: right;
+    border: 1px solid #d3d3d3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 2px 6px 2px 6px;
+    color: #212121;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 0.8em;
+
+}
+
+.update .video .commentButton {
+    float: right;
+    border: 1px solid #d3d3d3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 2px 6px 2px 6px;
+    color: #212121;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 0.8em;
+
+}
+
+.update .video .description {
+    float: left;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 2px 6px 2px 6px;
+    color: #212121;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 0.8em;
+
+}
+
+.update .video {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.videoTag {
+    background: #e8e8e8;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #212121;
+    padding: 2px 6px 2px 6px;
+    margin-left: 6px;
+    margin-top: 15px;
+    font-size: 0.8em;
+    float: left;
+}
+
+.notify {
+    width: 100%;
+    color: #212121;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #212121;
+}
+
+.notify .icon {
+    width: 30%;
+    font-size: 3em;
+    float: left;
+    text-align: center;
+}
+
+.notify .text {
+    width: 70%;
+    font-size: 1em;
+    float: right;
+}
+
+
