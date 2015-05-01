@@ -19,4 +19,6 @@
     -webkit-appearance:none;
     box-shadow: none !important;
     outline: none;
+    border: 0;
+    
 }
