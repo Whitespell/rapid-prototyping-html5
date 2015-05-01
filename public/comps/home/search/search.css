@@ -9,11 +9,14 @@
     border-bottom: 1px solid #e8e8e8;
 }
 
-.searchBar input {
+.searchBar input, .searchBar input:focus {
     background: url("{@this}/img/search.png") 12px 12px no-repeat #FFFFFF;
     background-size: 20px 20px;
     width: 100%;
     height: 100%;
     padding-left: 40px;
     font-size: 1em;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+    outline: none;
 }
