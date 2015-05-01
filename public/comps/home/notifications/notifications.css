@@ -1,0 +1,105 @@
+#notifications {
+    width: 100%;
+}
+
+.notificationWrapper {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    display: block;
+}
+
+.profile {
+    position: relative;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #f3f3f3;
+    display: inline-block;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    .profile {
+        width: 50%;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width: 1224px) {
+    .profile {
+        width: 50%;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width: 1824px) {
+    .profile {
+        width: 25%;
+    }
+}
+
+.profile .topProfileBar {
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:20%;
+    min-height: 40px;
+
+}
+
+.profile .profilePicture {
+    float: left;
+}
+
+.profile .topProfileBar .followButton {
+    float: right;
+    border: 1px solid #d3d3d3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 2px 6px 2px 6px;
+    color: #212121;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+
+.profile .topProfileBar .username {
+    float: left;
+    color: #2e88bf;
+    margin-left: 10px;
+    margin-top: 17px;
+    font-size: 0.8em;
+}
+
+.profile .topProfileBar .moreButton {
+    float: right;
+    border: 1px solid #d3d3d3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 2px 6px 2px 6px;
+    color: #212121;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 0.8em;
+
+}
