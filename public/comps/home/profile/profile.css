@@ -16,3 +16,13 @@
     width: 100%;
     background: blue;
 }
+
+.profile .profileButtons .profileButton {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    width: 25%;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #212121;
+}
