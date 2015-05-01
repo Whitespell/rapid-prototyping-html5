@@ -1480,7 +1480,7 @@ function Component(updateType, componentName, mainComponent) {
     var checkStyle = updateType === "update" ? undefined : wsUI.config.components[componentName].defaultStyle;
     var defaultStyle = checkStyle !== undefined ? checkStyle[deviceType] : "";
 
-    var content = "<div id=\"" + componentName + "\" style=\"" + defaultStyle + "\">Loading " + componentName + "</div>";
+    var content = "<div id=\"" + componentName + "\" style=\"" + defaultStyle + "\"><i style='font-size:2em'; class='fa fa-circle-o-notch fa-spin'></i></div>";
 
 
     // initialize the collector
