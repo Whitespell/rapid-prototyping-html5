@@ -48,8 +48,8 @@
         "suggestions": {
             "active": false,
             "defaultStyle": {
-                "desktop": "position: absolute;width: 100%;min-height: 100%;margin-top:60px;",
-                "mobile": "position: absolute;width: 100%;min-height: 100%;margin-top:60px;"
+                "desktop": "position: absolute;width: 100%;min-height: 100%;margin-top:50px;",
+                "mobile": "position: absolute;width: 100%;min-height: 100%;margin-top:50px;"
             },
             "remote_html": {
                 "desktop": {
@@ -125,8 +125,8 @@
         "nav": {
             "active": true,
             "defaultStyle": {
-                "desktop": "position: absolute;width: 100%;min-height: 60px;",
-                "mobile": "position: absolute;width: 100%;min-height: 60px;"
+                "desktop": "position: absolute;width: 100%;min-height: 50px;",
+                "mobile": "position: absolute;width: 100%;min-height: 50px;"
             },
             "remote_html": {
                 "desktop": {
@@ -166,8 +166,8 @@
         "bottombar": {
             "active": true,
             "defaultStyle": {
-                "desktop": "position: fixed;width: 100%;min-height: 60px;bottom:0;left:0;",
-                "mobile": "position: fixed;width: 100%;min-height: 60px;bottom:0;left:0;"
+                "desktop": "position: fixed;width: 100%;min-height: 50px;bottom:0;left:0;",
+                "mobile": "position: fixed;width: 100%;min-height: 50px;bottom:0;left:0;"
             },
             "remote_html": {
                 "desktop": {
@@ -207,8 +207,8 @@
         "home": {
             "active": true,
             "defaultStyle": {
-                "desktop": "position: absolute;width: 100%;min-height: 100%;margin-top:60px;text-align:center;",
-                "mobile": "position: absolute;width: 100%;min-height: 100%;margin-top:60px;text-align:center;"
+                "desktop": "position: absolute;width: 100%;min-height: 100%;margin-top:50px;text-align:center;",
+                "mobile": "position: absolute;width: 100%;min-height: 100%;margin-top:50px;text-align:center;"
             },
             "remote_html": {
                 "desktop": {
