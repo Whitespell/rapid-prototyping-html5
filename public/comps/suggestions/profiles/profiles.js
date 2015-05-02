@@ -44,22 +44,6 @@ var gestures = {
             cancel: function(el) {
                 DOM.transform(el,"opacity", "1");
             }
-        },
-        "skipButton" : {
-            touch: function(el) {
-                DOM.transform(el,"opacity", "0.3");
-            },
-            release: function(el) {
-                goToHome();
-
-                DOM.transform(el,"opacity", "1");
-            },
-            after: function(el) {
-                DOM.transform(el,"opacity", "1");
-            },
-            cancel: function(el) {
-                DOM.transform(el,"opacity", "1");
-            }
         }
 
     },
