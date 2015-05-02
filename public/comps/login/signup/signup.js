@@ -1,4 +1,4 @@
-var gesture = {
+var gestures = {
 
     unique : {
         "createAccount": {
@@ -10,12 +10,15 @@ var gesture = {
     },
 
     "collective" : {
-            "returnToLogin" : {
-                release: function(el) {
-                    wsUI.layout.toggleVisibility(document.getElementById("logInForm"));
-                    wsUI.layout.toggleVisibility(document.getElementById(el.getAttribute("data-parent")));
-                }
+        "returnToLogin" : {
+            release: function(el) {
+                wsUI.layout.updatePage({
+                    components: ["login"],
+                    updates: ["login"]
+                }, true);
             }
+        }
         }
 };
 
+wsUI.ui.addGestures("{{componentName}}", gestures);
