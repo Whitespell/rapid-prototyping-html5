@@ -41,6 +41,42 @@
                 }
             },
 
+            "updates" : {
+                "login->signup" : {
+                    "remote_html": {
+                        "desktop": {
+                            "src": "{@this}/comps/suggestions/login/signup.html",
+                            "version": ""
+                        },
+                        "mobile": {
+                            "src": "{@this}/comps/suggestions/login/signup.html",
+                            "version": ""
+                        }
+                    },
+                    "remote_css": {
+                        "mobile": {
+                            "src": ["{@this}/comps/suggestions/login/login.css"],
+                            "version": ""
+                        },
+                        "desktop": {
+                            "src": ["{@this}/comps/suggestions/login/login.css"],
+                            "version": ""
+                        }
+
+                    },
+                    "remote_js": {
+                        "desktop": {
+                            "src": ["{@this}/comps/suggestions/signup/signup.js"],
+                            "version": ""
+                        },
+                        "mobile": {
+                            "src": ["{@this}/comps/suggestions/signup/signup.js"],
+                            "version": ""
+                        }
+                    }
+                }
+            },
+
             "position": "application"
         },
 

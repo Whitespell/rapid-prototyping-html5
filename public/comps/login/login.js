@@ -17,16 +17,11 @@ var gestures = {
 
         "signUp" : {
            release: function(el) {
-               console.log("sign up button clciked");
-               wsUI.layout.toggleVisibility(document.getElementById("logInForm"));
-               wsUI.layout.toggleVisibility(document.getElementById("signUpForm"));
+               wsUI.layout.updatePage({
+                   components: ["suggestions"],
+                   updates: ["suggestions->profiles"]
+               }, true);
            }
-        },
-        "createAccount" : {
-            release: function(el) {
-                el.innerHTML = '<i class="fa fa-cog fa-spin"></i> Creating account...';
-                fakeProceed();
-            }
         },
         "lostPassword" : {
             release: function(el) {
