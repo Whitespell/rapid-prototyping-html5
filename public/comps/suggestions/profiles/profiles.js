@@ -105,6 +105,7 @@ wsUI.ui.addGestures("{{componentName}}", gestures);
             parseData: {}
         }
     }, function (data) {
+        console.log(data);
         data = wsUI.parseUrl(data);
         var profiles = JSON.parse(data);
         followToggles = new Array(profiles.length);
