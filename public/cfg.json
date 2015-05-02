@@ -48,8 +48,8 @@
         "suggestions": {
             "active": false,
             "defaultStyle": {
-                "desktop": "position: absolute;width: 100%;min-height: 100%;margin-top:50px;",
-                "mobile": "position: absolute;width: 100%;min-height: 100%;margin-top:50px;"
+                "desktop": "position: absolute;width: 100%;min-height: 100%;margin-top:60px;",
+                "mobile": "position: absolute;width: 100%;min-height: 100%;margin-top:60px;"
             },
             "remote_html": {
                 "desktop": {
