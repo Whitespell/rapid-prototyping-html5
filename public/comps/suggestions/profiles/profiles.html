@@ -5,12 +5,11 @@
     <var name="$profiles" vartype="list">
         <div data-id="{id}" class="profile">
             <div class="topProfileBar">
+                <img src="{@this}img/sports/{category}.svg" class="sportsIcon"/>
                 <div id="profilePicture-{id}" class="circle profilePicture" style="background-image:
        url('{img}')">
                 </div>
-                <div class="circle profilePicture" style="background-image:
-       url('{@this}img/sports/{category}.svg')">
-                </div>
+
                 <span class="username">{username}</span>
                 <span class="moreButton"><i class="fa fa-eye"></i> More</span>
                 <span class="tag followButton" id="followButton-{id}" data-id="{id}"><i class="fa fa-bolt"></i> Follow</span>
