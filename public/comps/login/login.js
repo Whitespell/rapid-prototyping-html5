@@ -1,13 +1,10 @@
-
-
-
+wsUI.history.startHistory();
 console.log("login loaded");
 var fakeProceed = function() {
     window.setTimeout(function() {
         wsUI.layout.deactivateComponent("login");
         wsUI.layout.activateComponent("nav");
         wsUI.layout.activateComponent("suggestions");
-        wsUI.history.startHistory();
     }, 500);
 }
 
