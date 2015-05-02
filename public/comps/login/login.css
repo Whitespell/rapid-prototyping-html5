@@ -75,7 +75,7 @@ a.btn, input[type='submit'] {
     color: #FFFFFF;
     margin-top: 5px;
     -webkit-appearance:none;
-    width: 49.75%;
+    width: 100%;
     min-height: 40px;
     outline: none;
     box-shadow: none !important;
