@@ -1,5 +1,4 @@
 wsUI.history.startHistory();
-console.log("login loaded");
 var fakeProceed = function() {
     window.setTimeout(function() {
         wsUI.layout.deactivateComponent("login");
@@ -39,8 +38,10 @@ var gestures = {
     collective: { //classes
         "returnToLogin" : {
             release: function(el) {
-                wsUI.layout.toggleVisibility(document.getElementById("logInForm"));
-                wsUI.layout.toggleVisibility(document.getElementById(el.getAttribute("data-parent")));
+                wsUI.layout.updatePage({
+                    components: ["login"],
+                    updates: ["login"]
+                }, true);
             }
         }
     }
