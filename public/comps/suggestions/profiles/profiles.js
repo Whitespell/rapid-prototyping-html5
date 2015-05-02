@@ -15,6 +15,7 @@ var toggleFollow = function (id) {
         followToggles[id] = true;
         DOM.transform(document.getElementById("followButton-"+id), "background", "#2e88bf");
         DOM.transform(document.getElementById("followButton-"+id), "color", "#FFFFFF");
+        document.getElementById("profilepicture-"+id).style.border = '3px solid #2e88bf;';
         document.getElementById("followButton-"+id).innerHTML = '<i class="fa fa-user-times"></i> Unfollow';
     } else {
         followToggles[id] = false;

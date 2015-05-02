@@ -72,6 +72,7 @@ and (min-width: 1824px) {
 
 .profile .profilePicture {
     float: left;
+    border: none;
 }
 
 .profile .topProfileBar .followButton {
