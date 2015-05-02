@@ -18,7 +18,7 @@
             "hearts"    :   310,
             "video_x1000" : 1,
             "name": "Soccer",
-            "img": "{@this}img/example_athletes/Soccer.jpg"
+            "img": "{@this}img/example_athletes/soccer.jpg"
         },
         {
             "id"    :   4,
