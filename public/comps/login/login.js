@@ -18,8 +18,8 @@ var gestures = {
         "signUp" : {
            release: function(el) {
                wsUI.layout.updatePage({
-                   components: ["suggestions"],
-                   updates: ["suggestions->profiles"]
+                   components: ["login"],
+                   updates: ["login->signup"]
                }, true);
            }
         },
