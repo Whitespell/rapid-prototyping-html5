@@ -50,7 +50,7 @@ var gestures = {
             cancel: function(el) {
                 DOM.transform(el,"opacity", "1");
             }
-        },
+        }/*,
         "uploadButton" : {
             touch: function(el) {
                 DOM.transform(el,"opacity", "0.3");
@@ -70,7 +70,7 @@ var gestures = {
             cancel: function(el) {
                 DOM.transform(el,"opacity", "1");
             }
-        },
+        }*/,
         "searchButton" : {
             touch: function(el) {
                 DOM.transform(el,"opacity", "0.3");
