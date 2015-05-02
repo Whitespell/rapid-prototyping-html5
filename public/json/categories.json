@@ -17,8 +17,8 @@
             "id"    :   3,
             "hearts"    :   310,
             "video_x1000" : 1,
-            "name": "Baseball",
-            "img": "{@this}img/example_athletes/baseball.jpg"
+            "name": "Soccer",
+            "img": "{@this}img/example_athletes/Soccer.jpg"
         },
         {
             "id"    :   4,
@@ -26,75 +26,5 @@
             "video_x1000" : 9,
             "name": "Basketball",
             "img": "{@this}img/example_athletes/basketball.jpg"
-        },
-        {
-            "id"    :   5,
-            "hearts"    :   513,
-            "video_x1000" : 7,
-            "name": "Ice Hockey",
-            "img": "{@this}img/example_athletes/hockey.jpg"
-        },
-        {
-            "id"    :   6,
-            "hearts"    :   613,
-            "video_x1000" : 5,
-            "name": "Field Hockey",
-            "img": "{@this}img/example_athletes/fieldhockey.jpg"
-        },
-        {
-            "id"    :   7,
-            "hearts"    :   915,
-            "video_x1000" : 4,
-            "name": "Soccer",
-            "img": "{@this}img/example_athletes/soccer.jpg"
-        },
-        {
-            "id"    :   8,
-            "video_x1000" : 3,
-            "hearts"    :   881,
-            "name": "Crossfit",
-            "img": "{@this}img/example_athletes/crossfit.jpg"
-        },
-        {
-            "id"    :   9,
-            "hearts"    :   448,
-            "video_x1000" : 1,
-            "name": "Lacrosse",
-            "img": "{@this}img/example_athletes/lax.jpg"
-        },
-        {
-            "id"    :   10,
-            "hearts"    :   294,
-            "video_x1000" : 4,
-            "name": "Xtreme",
-            "img": "{@this}img/example_athletes/xtreme.jpg"
-        },
-        {
-            "id"    :   11,
-            "hearts"    :   741,
-            "video_x1000" : 6,
-            "name": "Pilates",
-            "img": "{@this}img/example_athletes/pilates.jpg"
-        },
-        {
-            "id"    :   12,
-            "hearts"    :   381,
-            "video_x1000" : 9,
-            "name": "Yoga",
-            "img": "{@this}img/example_athletes/yoga.jpg"
-        },
-        {
-            "id"    :   13,
-            "hearts"    :   971,
-            "video_x1000" : 8,
-            "name": "Running",
-            "img": "{@this}img/example_athletes/running_sun.jpg"
-        },
-        {
-            "id"    :   14,
-            "hearts"    :   191,
-            "video_x1000" : 6,
-            "name": "Other",
-            "img": "{@this}img/example_athletes/tennis.jpg"
         }
 ]
