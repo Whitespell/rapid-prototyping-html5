@@ -64,7 +64,7 @@ var gestures = {
 
     collective: { //classes
 
-        "profiles": {
+        "profile": {
             touch: function (el) {
                 DOM.transform(el, "opacity", "0.3");
             },
