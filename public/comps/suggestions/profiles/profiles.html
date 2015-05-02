@@ -1,11 +1,13 @@
 <h2 style="text-align:center;color:#212121;text-shadow:none;margin-bottom:15px;">Great. Do you like any of there?</h2>
 
 <div class="profileWrapper">
-    <var name="$profiles" vartype="list">
+    <var name="$football" vartype="list">
         <div data-id="{id}" class="profile">
             <div class="topProfileBar">
                 <div id="profilePicture-{id}" class="circle profilePicture" style="background-image:
        url('{img}')">
+                <div class="circle profilePicture" style="background-image:
+       url('{@this}/img/sports/{category}.svg')">
                 </div>
                 <span class="username">{username}</span>
                 <span class="moreButton"><i class="fa fa-eye"></i> More</span>

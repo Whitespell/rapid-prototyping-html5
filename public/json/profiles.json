@@ -5,7 +5,7 @@
             "preview_video" : 3,
             "username" : "jenselter",
             "img" : "{@this}img/headshots_athletes/Selter.png",
-            "category" : "Bodybuilding"
+            "category" : "fitness"
         },
         {
             "id" : 2,
@@ -13,7 +13,7 @@
             "preview_video" : 3,
             "username" : "aschwneg",
             "img" : "{@this}img/headshots_athletes/Arnold.png",
-            "category" : "Bodybuilding"
+            "category" : "fintess"
         },
         {
             "id" : 3,
@@ -21,7 +21,7 @@
             "preview_video" : 3,
             "username" : "odell_b",
             "img" : "{@this}img/headshots_athletes/Odell_1.png",
-            "category" : "Football"
+            "category" : "football"
         },
         {
             "id" : 4,
@@ -29,15 +29,15 @@
             "preview_video" : 3,
             "username" : "caepernick",
             "img" : "{@this}img/headshots_athletes/Kaepernick.png",
-            "category" : "Football"
+            "category" : "football"
         },
         {
             "id" : 4,
             "hearts" : 131,
             "preview_video" : 3,
-            "username" : "caepernick",
+            "username" : "kcaepernick",
             "img" : "{@this}img/headshots_athletes/Kaepernick.png",
-            "category" : "Football"
+            "category" : "football"
         },
         {
             "id" : 5,
@@ -45,23 +45,7 @@
             "preview_video" : 3,
             "username" : "jjwatt",
             "img" : "{@this}img/headshots_athletes/Watt_2.png",
-            "category" : "Football"
-        },
-        {
-            "id" : 6,
-            "hearts" : 131,
-            "preview_video" : 3,
-            "username" : "mtrout",
-            "img" : "{@this}img/headshots_athletes/Trout.png",
-            "category" : "Baseball"
-        },
-        {
-            "id" : 6,
-            "hearts" : 131,
-            "preview_video" : 3,
-            "username" : "gstanton",
-            "img" : "{@this}img/headshots_athletes/Stanton.png",
-            "category" : "Baseball"
+            "category" : "football"
         },
         {
             "id" : 7,
@@ -69,7 +53,7 @@
             "preview_video" : 3,
             "username" : "rwestbrook",
             "img" : "{@this}img/headshots_athletes/Westbrook_1.png",
-            "category" : "Basketball"
+            "category" : "basketball"
         },
         {
             "id" : 8,
@@ -77,7 +61,7 @@
             "preview_video" : 3,
             "username" : "scurry",
             "img" : "{@this}img/headshots_athletes/Curry.png",
-            "category" : "Basketball"
+            "category" : "basketball"
         },
         {
             "id" : 9,
@@ -85,23 +69,7 @@
             "preview_video" : 3,
             "username" : "rwestbrook",
             "img" : "{@this}img/headshots_athletes/Westbrook_1.png",
-            "category" : "Basketball"
-        },
-        {
-            "id" : 10,
-            "hearts" : 131,
-            "preview_video" : 3,
-            "username" : "rrousey",
-            "img" : "{@this}img/headshots_athletes/Rousey_1.png",
-            "category" : "Boxing"
-        },
-        {
-            "id" : 11,
-            "hearts" : 131,
-            "preview_video" : 3,
-            "username" : "fmayweather",
-            "img" : "{@this}img/headshots_athletes/Mayweather.png",
-            "category" : "Boxing"
+            "category" : "basketball"
         },
         {
             "id" : 12,
@@ -109,7 +77,7 @@
             "preview_video" : 3,
             "username" : "mpacquiao",
             "img" : "{@this}img/headshots_athletes/Pacquiao.png",
-            "category" : "Basketball"
+            "category" : "basketball"
         },
         {
             "id" : 13,
@@ -117,7 +85,7 @@
             "preview_video" : 3,
             "username" : "therock",
             "img" : "{@this}img/headshots_athletes/Rock_1.png",
-            "category" : "Bodybuilding"
+            "category" : "fitness"
         },
         {
             "id" : 14,
@@ -125,7 +93,7 @@
             "preview_video" : 3,
             "username" : "bradleycooper",
             "img" : "{@this}img/headshots_athletes/Cooper.png",
-            "category" : "Bodybuilding"
+            "category" : "fitness"
         },
         {
             "id" : 15,
@@ -133,7 +101,7 @@
             "preview_video" : 3,
             "username" : "kimkardashian",
             "img" : "{@this}img/headshots_athletes/Kardashian.png",
-            "category" : "Crossfit"
+            "category" : "fitness"
         },
         {
             "id" : 16,
@@ -141,7 +109,7 @@
             "preview_video" : 3,
             "username" : "pkane",
             "img" : "{@this}img/headshots_athletes/Kane.png",
-            "category" : "Basketball"
+            "category" : "fitness"
         }
 
 
