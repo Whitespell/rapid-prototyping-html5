@@ -13,6 +13,7 @@ var toggleCard = function (id) {
     } else {
         categoryToggles[id] = false;
         document.getElementById("followButton-"+id).innerHTML = '<i class="fa fa-user-plus"></i> Follow';
+        DOM.transform(document.getElementById("followButton-"+id), "background", "#2e88bf");
         DOM.transform(document.getElementById("followButton-"+id), "color", "#212121");
         DOM.transform(document.getElementById("followButton-"+id), "background", "none");
         success.className = "animated fadeOut"; // fade it out
