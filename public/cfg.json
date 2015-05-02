@@ -66,11 +66,11 @@
                     },
                     "remote_js": {
                         "desktop": {
-                            "src": ["{@this}/comps/signup/signup/signup.js"],
+                            "src": ["{@this}/comps/signup/signup.js"],
                             "version": ""
                         },
                         "mobile": {
-                            "src": ["{@this}/comps/signup/signup/signup.js"],
+                            "src": ["{@this}/comps/signup/signup.js"],
                             "version": ""
                         }
                     }
