@@ -6,8 +6,8 @@
         "login": {
             "active": true,
             "defaultStyle": {
-                "desktop": "position: absolute;width: 100%;min-height: 100%;",
-                "mobile": "position: absolute;width: 100%;min-height: 100%;"
+                "desktop": "position: absolute;width: 100%;min-height: 100%;background:url('img/wakeboarder.jpg') no-repeat 30% 50%;",
+                "mobile": "position: absolute;width: 100%;min-height: 100%;background:url('img/wakeboarder.jpg') no-repeat 30% 50%;"
             },
             "remote_html": {
                 "desktop": {

@@ -1,12 +1,7 @@
 #login {
     /* This image will be displayed fullscreen */
-    background:url('img/wakeboarder.jpg') no-repeat 30% 50%;
 
-    /* Ensure the html element always takes up the full height of the browser window */
-    min-height:100%;
 
-    /* The Magic */
-    background-size:cover;
 }
 
 section.home_wrapper {
