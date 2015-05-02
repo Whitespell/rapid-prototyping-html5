@@ -45,32 +45,32 @@
                 "login->signup" : {
                     "remote_html": {
                         "desktop": {
-                            "src": "{@this}/comps/suggestions/login/signup/signup.html",
+                            "src": "{@this}/comps/login/signup/signup.html",
                             "version": ""
                         },
                         "mobile": {
-                            "src": "{@this}/comps/suggestions/login/signup/signup.html",
+                            "src": "{@this}/comps/login/signup/signup.html",
                             "version": ""
                         }
                     },
                     "remote_css": {
                         "mobile": {
-                            "src": ["{@this}/comps/suggestions/login/login.css"],
+                            "src": ["{@this}/comps/login/login.css"],
                             "version": ""
                         },
                         "desktop": {
-                            "src": ["{@this}/comps/suggestions/login/login.css"],
+                            "src": ["{@this}/comps/login/login.css"],
                             "version": ""
                         }
 
                     },
                     "remote_js": {
                         "desktop": {
-                            "src": ["{@this}/comps/suggestions/signup/signup/signup.js"],
+                            "src": ["{@this}/comps/signup/signup/signup.js"],
                             "version": ""
                         },
                         "mobile": {
-                            "src": ["{@this}/comps/suggestions/signup/signup/signup.js"],
+                            "src": ["{@this}/comps/signup/signup/signup.js"],
                             "version": ""
                         }
                     }
