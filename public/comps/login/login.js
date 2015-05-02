@@ -19,12 +19,6 @@ var gestures = {
                }, true);
            }
         },
-        "lostPassword" : {
-            release: function(el) {
-                wsUI.layout.toggleVisibility(document.getElementById("logInForm"));
-                wsUI.layout.toggleVisibility(document.getElementById("lostPasswordForm"));
-            }
-        },
         "logIn" :   {
             release: function(el) {
                 el.innerHTML = '<i class="fa fa-cog fa-spin"></i> Logging in....';
