@@ -506,7 +506,7 @@ var wsUI = {
             task: "request",
             params: {
                 url: globalConfig.STATIC_CONTENT_URL + globalConfig.CONFIG_FILE, // load from json later
-                parseData: {}
+                payload: {}
             }
         }, function (data) {
             try {
@@ -517,7 +517,7 @@ var wsUI = {
                     task: "request",
                     params: {
                         url: wsUI.config.dT,
-                        parseData: {}
+                        payload: {}
                     }
 
                 }, function (data) {
@@ -1499,7 +1499,9 @@ function Component(updateType, componentName, mainComponent) {
                 cacheResult: true,
                 params: {
                     url: (incl_js[i]), // load from json later
-                    parseData: {}
+                    payload: {
+
+                    }
                 }
             }, function (data) {
                 collects.js_content += wsUI.parseUrl(data);
@@ -1522,7 +1524,7 @@ function Component(updateType, componentName, mainComponent) {
                 cacheResult: true,
                 params: {
                     url: (incl_css[i]), // load from json later
-                    parseData: {}
+                    payload: {}
                 }
             }, function (data) {
 
@@ -1548,7 +1550,7 @@ function Component(updateType, componentName, mainComponent) {
         cacheResult: true,
         params: {
             url: url, // load from json later
-            parseData: {}
+            payload: {}
         }
     }, function (data) {
 
