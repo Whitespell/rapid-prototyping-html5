@@ -1,5 +1,5 @@
 wsUI.history.startHistory();
-var fakeProceed = function() {
+var proceed = function() {
     window.setTimeout(function() {
         wsUI.layout.deactivateComponent("login");
         wsUI.layout.activateComponent("nav");
@@ -15,7 +15,7 @@ var attemptRegistration = function() {
     wsUI.workers.assign("Cors", {
         task: "request",
         params: {
-            url: "http://localhost:9001/users/", // load from json later
+            url: "http://146.148.49.245:9001/users/", // load from json later
             method: "post",
             payLoad: {
                 "username" : username,
@@ -26,7 +26,35 @@ var attemptRegistration = function() {
         }
     }, function (data) {
 
-        console.log(data)
+        document.getElementById("createAccount").innerHTML = '<i class="fa fa-user-plus"></i><span style="margin-left:10px;">Create Account</span>';
+
+        console.log(data);
+
+        var jsonResponse = JSON.parse(data);
+
+        if(jsonResponse.user_id !== undefined) {
+
+            w$("$username", {
+                value: username
+            });
+
+            w$("$email", {
+                value: email
+            });
+
+            w$("$user_id", {
+                value: jsonResponse.user_id
+            });
+            wsUI.layout.deactivateComponent("login");
+            wsUI.layout.activateComponent("nav");
+            wsUI.layout.activateComponent("suggestions");
+        } else {
+                    DOM.transform(document.getElementById("error"), "display", "block");
+                    document.getElementById("error").innerHTML = jsonResponse.errorMessage;
+        }
+
+
+
 
     });
 }

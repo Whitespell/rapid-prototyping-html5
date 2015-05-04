@@ -163,6 +163,12 @@ and (min-width: 1824px) {
 .update .video {
     margin-top: 30px;
     width: 100%;
+    min-height: 400px;
+}
+
+.update .video .videoContent {
+    width: 100%;
+    min-height: 400px;
 }
 
 .videoTag {

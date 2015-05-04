@@ -292,11 +292,11 @@
                     },
                     "remote_css": {
                         "mobile": {
-                            "src": ["{@this}/comps/home/trending/trending.css"],
+                            "src": ["{@this}/comps/home/home.css"],
                             "version": ""
                         },
                         "desktop": {
-                            "src": ["{@this}/comps/home/trending/trending.css"],
+                            "src": ["{@this}/comps/home/home.css"],
                             "version": ""
                         }
 

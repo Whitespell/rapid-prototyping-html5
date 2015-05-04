@@ -20,7 +20,7 @@ var toggleFollow = function (id) {
     } else {
         followToggles[id] = false;
         DOM.transform(document.getElementById("profilePicture-"+id), "border", "none");
-        document.getElementById("followButton-"+id).innerHTML = '<i class="fa fa-flash"></i> Follow';
+        document.getElementById("followButton-"+id).innerHTML = '<i class="fa fa-user-plus"></i> $1.99/m';
         DOM.transform(document.getElementById("followButton-"+id), "color", "#212121");
         DOM.transform(document.getElementById("followButton-"+id), "background", "none");
     }
