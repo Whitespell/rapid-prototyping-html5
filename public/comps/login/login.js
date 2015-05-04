@@ -7,6 +7,28 @@ var fakeProceed = function() {
     }, 500);
 }
 
+var attemptLogin = function() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    wsUI.workers.assign("Cors", {
+        task: "request",
+        params: {
+            url: "http://localhost:9001/authentication/", // load from json later
+            method: "post",
+            payLoad: {
+                "username" : username,
+                "password" : password
+            },
+            payLoadType: "json"
+        }
+    }, function (data) {
+
+        console.log(data)
+
+    });
+}
+
 var gestures = {
 
     unique: { // ids

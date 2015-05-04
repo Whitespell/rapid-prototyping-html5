@@ -76,12 +76,12 @@ var Whitespell = function(apiKey, options){
             Cors: {
                 task: "request",
                 params: {
-                    url: 'http://172.16.1.2:8040/blox',
+                    url: 'http://localhost',
                     method: "post"
                 }
             },
             WebSocket: {
-                host: 'http://172.16.1.2',
+                host: 'http://localhost',
                 port: 9092
             }
         }
@@ -447,7 +447,7 @@ WorkerHandler.prototype.assign = function (workerName, data, callback) {
         }
 
         //convert json to url query
-        if(data.params.payLoad.payLoadType === "json") {
+        if(data.params.payLoad !== undefined && data.params.payLoadType === "json") {
             data.params.payLoad = JSON.stringify(data.params.payLoad);
         } else {
             data.params.payLoad = this.jsonToURL(data.params.payLoad);

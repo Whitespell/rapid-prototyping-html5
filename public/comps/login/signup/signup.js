@@ -21,9 +21,11 @@ var attemptRegistration = function() {
                 "username" : username,
                 "password" : password,
                 "email" : email
-            }
+            },
+            payLoadType: "json"
         }
     }, function (data) {
+
         console.log(data)
 
     });
