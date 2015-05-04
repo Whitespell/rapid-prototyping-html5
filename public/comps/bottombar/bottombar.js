@@ -50,6 +50,25 @@ var gestures = {
             cancel: function(el) {
                 DOM.transform(el,"opacity", "1");
             }
+        },
+        "logoutButton" : {
+            touch: function(el) {
+                DOM.transform(el,"opacity", "0.3");
+            },
+            release: function(el) {
+
+                window.location.reload();
+                
+                buttonEffect(el.getAttribute("id"));
+
+                DOM.transform(el,"opacity", "1");
+            },
+            after: function(el) {
+                DOM.transform(el,"opacity", "1");
+            },
+            cancel: function(el) {
+                DOM.transform(el,"opacity", "1");
+            }
         }/*,
         "uploadButton" : {
             touch: function(el) {
