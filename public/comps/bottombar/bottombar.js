@@ -58,7 +58,7 @@ var gestures = {
             release: function(el) {
 
                 window.location.reload();
-                
+
                 buttonEffect(el.getAttribute("id"));
 
                 DOM.transform(el,"opacity", "1");
