@@ -14,7 +14,7 @@ var attemptLogin = function() {
     wsUI.workers.assign("Cors", {
         task: "request",
         params: {
-            url: "http://146.148.49.245:9001/authentication/", // load from json later
+            url: "https://peakapi.whitespell.com/authentication/", // load from json later
             method: "post",
             payLoad: {
                 "username" : username,
