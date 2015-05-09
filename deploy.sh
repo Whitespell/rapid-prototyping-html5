@@ -4,6 +4,6 @@
 git add --all
 git commit -m $1
 git push origin master
-ssh public.whitespell.com "cd /usr/share/nginx/www/peak && git pull --force origin master"
+ssh public-internal.whitespell.com "cd /usr/share/nginx/www/peak && git pull --force origin master"
 ./build.sh
 
