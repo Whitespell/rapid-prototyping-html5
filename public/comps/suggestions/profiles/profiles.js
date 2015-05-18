@@ -64,20 +64,6 @@ var gestures = {
                 DOM.transform(el, "opacity", "1");
             }
         },
-        "followButton": {
-        touch: function (el) {
-            DOM.transform(el, "opacity", "0.3");
-        },
-        release: function (el) {
-            toggleFollow(el.getAttribute("data-id"));
-        },
-        after: function(el) {
-            DOM.transform(el, "opacity", "1");
-        },
-        cancel: function(el) {
-            DOM.transform(el, "opacity", "1");
-        }
-    },
     "moreButton": {
         touch: function (el) {
             DOM.transform(el, "opacity", "0.3");
