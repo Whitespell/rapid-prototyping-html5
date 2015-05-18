@@ -3,9 +3,9 @@
             "id" : 1,
             "hearts" : 131,
             "preview_video" : 3,
-            "username" : "jenselter",
-            "img" : "{@this}img/headshots_athletes/Selter.png",
-            "category" : "fitness"
+            "username" : "scurry",
+            "img" : "{@this}img/headshots_athletes/Westbrook_1.png",
+            "category" : "Football"
         },
         {
             "id" : 2,
@@ -51,9 +51,9 @@
             "id" : 7,
             "hearts" : 131,
             "preview_video" : 3,
-            "username" : "rwestbrook",
-            "img" : "{@this}img/headshots_athletes/Westbrook_1.png",
-            "category" : "basketball"
+            "username" : "jenselter",
+            "img" : "{@this}img/headshots_athletes/Selter.png",
+            "category" : "Fitness"
         },
         {
             "id" : 8,
