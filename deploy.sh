@@ -1,12 +1,13 @@
 #!/bin/sh
-ssh public-internal.whitespell.com "cd /usr/share/whitespell.com && git pull --force origin master"
-ssh public-internal.whitespell.com "cp -R /usr/share/whitespell.com/www/* /var/www/whitespell.com/htdocs"
 
-#remove the directories
-ssh public-internal.whitespell.com "sudo rm -rf /usr/share/peak-app/*";
+# HOST KEY VERIFICATION PROMPT WILL MAKE THIS FAIL THE FIRST TIME YOU RUN IT.
 
-#create the peak api directory if it doesn't already exist
-ssh public-internal.whitespell.com "sudo mkdir -p /usr/share/peak-app && sudo chmod -R 777 /usr/share/peak-app";
+
+#create the peak directories if it doesn't already exist and chmod them
+ssh public-internal.whitespell.com "sudo mkdir -p /usr/share/nginx/www/peak && sudo chmod -R 777 /usr/share/nginx/www/peak";
+ssh public-internal.whitespell.com "sudo mkdir -p /usr/share/nginx/www/peak/local/ && sudo chmod -R 777 /usr/share/nginx/www/peak/local/";
+ssh public-internal.whitespell.com "sudo mkdir -p /usr/share/nginx/www/peak/public/ && sudo chmod -R 777 /usr/share/nginx/www/peak/public/";
+
 
 #//todo make it zip based
 #place the right content in the directories
