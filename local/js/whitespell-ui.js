@@ -502,34 +502,82 @@ var wsUI = {
         wsUI.history = new HistoryController();
         wsUI.workers = myOwnWs.workerHandler;
 
-        wsUI.workers.assign("Cors", {
-            task: "request",
-            params: {
-                url: globalConfig.STATIC_CONTENT_URL + globalConfig.CONFIG_FILE, // load from json later
-                payload: {}
-            }
-        }, function (data) {
-            try {
-                wsUI.config = JSON.parse(wsUI.parseUrl(data));
+        this.requestMainFiles(0);
+
+    },
+
+    requestMainFiles: function(errorCount) {
+
+        if(errorCount >= 5) {
+            alert ("An unforseen error occured, preventing the app from loading.");
+            return;
+        }
+
+        var startTime = +new Date();
+
+        var finished = false;
+
+        try {
+            wsUI.workers.assign("Cors", {
+                task: "request",
+                params: {
+                    url: globalConfig.STATIC_CONTENT_URL + globalConfig.CONFIG_FILE, // load from json later
+                    payload: {}
+                }
+            }, function (data) {
+                wsUI.config = JSON.parse(wsUI.parseUrl(data.responseText));
                 wsUI.config.dT = wsUI.parseUrl(wsUI.config.dT);
 
                 wsUI.workers.assign("Cors", {
                     task: "request",
                     params: {
-                        url: wsUI.config.dT,
-                        payload: {}
+                        url: wsUI.config.dT
                     }
 
                 }, function (data) {
-                    wsUI.layout.addScriptsToDom("dT", data);
+
+                    if(data.status !== 200) {
+                        throw new Error("Error in loading dT");
+                    }
+                    wsUI.layout.addScriptsToDom("dT", data.responseText);
+
+                    wsUI.workers.assign("Cors", {
+                        task: "request",
+                        params: {
+                            url: wsUI.config.core[deviceType]
+                        }
+
+                    }, function (data) {
+
+                        if(data.status !== 200) {
+                            throw new Error("Error in loading core");
+                        }
+                        wsUI.layout.addScriptsToDom("core", data.responseText);
+                        finished = true; // all went well.
+                    });
+
                     wsUI.ui.initialize();
                     wsUI.layout.initialize();
-                });
-            } catch (er) {
-                console.log(er.message);
-            }
-        });
 
+                });
+            });
+
+            /**
+             * Make sure it's been received within 2 seconds, otherwise try again.
+             */
+
+            setTimeout(function() {
+                if(finished === false) {
+                    errorCount += 1;
+                    return wsUI.requestMainFiles(errorCount);
+                }
+            }, 2000);
+
+        } catch(e) {
+            console.log(stack);
+            errorCount += 1;
+            return wsUI.requestMainFiles(errorCount);
+        }
     },
 
 
@@ -1504,7 +1552,7 @@ function Component(updateType, componentName, mainComponent) {
                     }
                 }
             }, function (data) {
-                collects.js_content += wsUI.parseUrl(data);
+                collects.js_content += wsUI.parseUrl(data.responseText);
                 receivedJS++;
                 if (receivedJS === totalExpectedJS) {
                     finishedJavascript = true;
@@ -1529,11 +1577,11 @@ function Component(updateType, componentName, mainComponent) {
             }, function (data) {
 
 
-                if (data.length <= 0) {
+                if (data.responseText.length <= 0) {
                     return;
                 }
 
-                collects.css_content += wsUI.parseUrl(data);
+                collects.css_content += wsUI.parseUrl(data.responseText);
                 receivedCSS++;
 
                 if (receivedCSS === totalExpectedCSS) {
@@ -1554,7 +1602,7 @@ function Component(updateType, componentName, mainComponent) {
         }
     }, function (data) {
 
-        collects.html_content += data;
+        collects.html_content += data.responseText;
         notifyReceival();
 
     }, { element: document.getElementById("navigation"), type: "spinner" }); // todo(pim) get this working

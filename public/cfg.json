@@ -1,10 +1,14 @@
 {
     "dT": "{@this}/deviceTypes.js",
+    "core": {
+        "desktop" : "{@this}/core/core.js",
+        "mobile" : "{@this}/core/core.js"
+    },
 
     "components": {
 
         "login": {
-            "active": true,
+            "active": false,
             "defaultStyle": {
                 "desktop": "position: absolute;background:url('img/wakeboarder.jpg') no-repeat 30% 50%; background-size:cover;min-width: 100%;min-height: 100%;",
                 "mobile": "position: absolute;background:url('img/wakeboarder.jpg') no-repeat 30% 50%; background-size:cover;min-width: 100%;min-height: 100%;"
@@ -200,7 +204,7 @@
         },
 
         "bottombar": {
-            "active": false,
+            "active": true,
             "defaultStyle": {
                 "desktop": "position: fixed;width: 100%;min-height: 50px;bottom:0;left:0;",
                 "mobile": "position: fixed;width: 100%;min-height: 50px;bottom:0;left:0;"
@@ -241,10 +245,10 @@
         },
 
         "home": {
-            "active": false,
+            "active": true,
             "defaultStyle": {
-                "desktop": "position: absolute;width: 100%;min-height: 100%;margin-top:50px;text-align:center;",
-                "mobile": "position: absolute;width: 100%;min-height: 100%;margin-top:50px;text-align:center;"
+                "desktop": "position: absolute;width: 100%;min-height: 100%;text-align:center;",
+                "mobile": "position: absolute;width: 100%;min-height: 100%;50px;text-align:center;"
             },
             "remote_html": {
                 "desktop": {
